@@ -5,4 +5,5 @@ nav:
     - Level: 
         - About: about.md
         - Test: test\test01.md
+        - Installation Guide: 'OpenL Tablets - Installation Guide_5.25.md'
 theme: readthedocs
