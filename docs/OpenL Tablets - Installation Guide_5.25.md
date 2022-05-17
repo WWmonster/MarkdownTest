@@ -1,8 +1,6 @@
-![](media/6d28f47fbc7c98611e31e1a582a5d993.png)
+![Graphical user interface, website Description automatically generated](media/904dd8457e4c4c7550884b38df516582.png)
 
-![](media/1bdd979ff6723999f73c6516e06babed.png)
-
-**OpenL Tablets BRMS Installation Guide**
+# Document Information
 
 Release 5.25
 
@@ -13,162 +11,6 @@ Release 5.25
 [![](media/6e78c36b63bbb23649a8b8582ae706b0.png)](http://creativecommons.org/licenses/by/3.0/us/)
 
 *OpenL Tablets Documentation is licensed under a* [*Creative Commons Attribution 3.0 United States License*](http://creativecommons.org/licenses/by/3.0/us/)*.*
-
-Table of Contents
-
-[1 Preface](#_Toc97577373)
-
-[1.1 How This Guide Is Organized](#_Toc97577374)
-
-[1.2 Audience](#_Toc97577375)
-
-[1.3 Related Information](#_Toc97577376)
-
-[1.4 Typographic Conventions](#_Toc97577377)
-
-[2 Before You Begin](#_Toc97577378)
-
-[2.1 System Requirements for OpenL Tablets Software](#_Toc97577379)
-
-[2.2 Common Information about OpenL Tablets WebStudio Instances](#_Toc97577380)
-
-[OpenL Tablets WebStudio Home Directory Configuration](#_Toc97577381)
-
-[Starting OpenL Tablets WebStudio in the Cluster Mode](#_Toc97577382)
-
-[Sharing webstudio.properties](#_Toc97577383)
-
-[Sharing Project History](#_Toc97577384)
-
-[Sharing Project Index](#_Toc97577385)
-
-[3 Install OpenL Tablets WebStudio under Apache Tomcat](#_Toc97577386)
-
-[3.1 Installing JDK](#_Toc97577387)
-
-[3.2 Installing Apache Tomcat](#_Toc97577388)
-
-[Installing Apache Tomcat on Windows](#_Toc97577389)
-
-[Installing Apache Tomcat on UNIX / Linux Machine](#_Toc97577390)
-
-[3.3 Deploying OpenL Tablets WebStudio](#_Toc97577391)
-
-[Deploying OpenL Tablets WebStudio on a Windows Machine](#_Toc97577392)
-
-[Deploying OpenL Tablets WebStudio on a Linux Machine and Mac](#_Toc97577393)
-
-[3.4 Configuring External User Database](#_Toc97577394)
-
-[Adding Drivers and Installing and Configuring the Database](#_Toc97577395)
-
-[Configuring MySQL Database as External User Storage](#_Toc97577396)
-
-[Configuring MariaDB Database as External User Storage](#_Toc97577397)
-
-[Configuring Oracle Database as External User Storage](#_Toc97577398)
-
-[3.5 Setting Up OpenL Tablets WebStudio with Installation Wizard](#_Toc97577399)
-
-[Configuring OpenL Tablets WebStudio via JDBC Connection](#_Toc97577400)
-
-[Configuring OpenL Tablets WebStudio via JNDI Connection](#_Toc97577401)
-
-[Configuring OpenL Tablets WebStudio via Amazon Simple Storage Service](#_Toc97577402)
-
-[3.6 Integration with External Identity Providers](#_Toc97577403)
-
-[Local vs. External User Management](#_Toc97577404)
-
-[Configuring Authentication via Active Directory](#_Toc97577405)
-
-[Configuring Single Sign On via CAS](#_Toc97577406)
-
-[Configuring Single Sign On via SAML Server](#_Toc97577407)
-
-[3.7 Configuring Microsoft Excel Settings for Apache Tomcat](#_Toc97577408)
-
-[3.8 OpenL Tablets WebStudio Customization](#_Toc97577409)
-
-[Updating User Database Configuration](#_Toc97577410)
-
-[Configuring User Mode](#_Toc97577411)
-
-[Configuring Google Analytics](#_Toc97577412)
-
-[Configuring Private Key for Repository Security](#_Toc97577413)
-
-[4 Deploy OpenL Tablets Rule Services under Apache Tomcat](#_Toc97577414)
-
-[4.1 Downloading Preconfigured OpenL Tablets Rule Services](#_Toc97577415)
-
-[4.2 Configuring OpenL Tablets Rule Services for a Local Data Source](#_Toc97577416)
-
-[Configuring OpenL Tablets Rule Services via Local File System](#_Toc97577417)
-
-[Configuring OpenL Tablets Rule Services via Local ZIP Archives](#_Toc97577418)
-
-[Configuring OpenL Tablets Rule Services via Classpath JAR](#_Toc97577419)
-
-[4.3 Configuring OpenL Tablets Rule Services for a Database Data Source](#_Toc97577420)
-
-[Configuring OpenL Tablets Rule Services via JDBC Connection](#_Toc97577421)
-
-[Configuring OpenL Tablets Rule Services via JNDI Connection](#_Toc97577422)
-
-[Configuring OpenL Tablets Rule Services via AWS S3 Connection](#_Toc97577423)
-
-[4.4 Configuring OpenL Tablets Rule Services via GIT Connection](#_Toc97577424)
-
-[5 Install OpenL Tablets WebStudio and OpenL Tablets Rule Services on WebSphere Application Server](#_Toc97577425)
-
-[5.1 Prerequisites](#_Toc97577426)
-
-[5.2 Setting Up JVM Options for WebSphere Application Server](#_Toc97577427)
-
-[5.3 Preparing OpenL Tablets WAR Files](#_Toc97577428)
-
-[5.4 Deploying OpenL Tablets Web Applications on WebSphere Application Server](#_Toc97577429)
-
-[Deploying OpenL Tablets WebStudio on WebSphere Application Server](#_Toc97577430)
-
-[Deploying OpenL Tablets Rule Services on WebSphere Application Server](#_Toc97577431)
-
-[5.5 Configuring Settings for JDBC Connection](#_Toc97577432)
-
-[5.6 Configuring Settings for JNDI Connection](#_Toc97577433)
-
-[Configuring Global JNDI Context](#_Toc97577434)
-
-[Configuring Local JNDI Context](#_Toc97577435)
-
-[5.7 Configuring Microsoft Excel Settings for WebSphere Application Server](#_Toc97577436)
-
-[6 Install OpenL Tablets WebStudio and OpenL Tablets Rule Services on JBoss Application Server](#_Toc97577437)
-
-[6.1 Deploying OpenL Tablets WebStudio on JBoss Application Server](#_Toc97577438)
-
-[6.2 Deploying OpenL Tablets Rule Services on JBoss Application Server](#_Toc97577439)
-
-[6.3 Setting Up a JDBC Connection](#_Toc97577440)
-
-[6.4 Setting Up a JNDI Connection](#_Toc97577441)
-
-[7 OpenL Tablets WebStudio and Rule Services Integration](#_Toc97577442)
-
-[7.1 Deploying Rules to the Production Server](#_Toc97577443)
-
-[7.2 Integrating OpenL Tablets WebStudio and OpenL Tablets Rule Services via Database Repository](#_Toc97577444)
-
-[8 Troubleshooting Notes](#_Toc97577445)
-
-[9 Frequently Asked Questions](#_Toc97577446)
-
-[Appendix A: Official Docker Images for OpenL Tablets](#appendix-a-official-docker-images-for-openl-tablets)
-
-[Appendix B: OpenL Tablets WebStudio Image Configuration for SAML](#_Toc97577448)
-
-[Appendix C: CORS Filter Support Enablement in OpenL Tablets WebStudio](#appendix-c-cors-filter-support-enablement-in-openl-tablets-webstudio)
 
 # Preface
 
@@ -226,7 +68,7 @@ The following styles and conventions are used in this guide:
 | Courier                            | Represents file and directory names, code, system messages, and command-line commands.                                                                                                                                                                                                                                      |
 | **Courier Bold**                   | Represents emphasized text in code.                                                                                                                                                                                                                                                                                         |
 | **Select File \> Save As**         | Represents a command to perform, such as opening the File menu and selecting Save As.                                                                                                                                                                                                                                       |
-| *Italic*                           | Represents any information to be entered in a field.  Represents documentation titles.                                                                                                                                                                                                                                      |
+| *Italic*                           | Represents any information to be entered in a field. Represents documentation titles.                                                                                                                                                                                                                                       |
 | \< \>                              | Represents placeholder values to be substituted with user specific values.                                                                                                                                                                                                                                                  |
 | Hyperlink                          | Represents a hyperlink. Clicking a hyperlink displays the information topic or external source.                                                                                                                                                                                                                             |
 | **[name of guide]**                | Reference to another guide that contains additional information on a specific feature.                                                                                                                                                                                                                                      |
@@ -248,9 +90,9 @@ The following table covers system requirements for installing and running OpenL 
 | Operating systems        | One of the following: Microsoft Windows 7+ x86/64 Ubuntu 12.x Linux 3.x **Note:** OpenL Tablets software can potentially run on any operating system that supports Java Virtual Machine, for example, Mac OS. This table lists operating systems on which the OpenL Tablets software is tested and supported. |
 | Browsers                 | One of the following: Microsoft Internet Explorer 11.x Firefox 60 ESR or later Chrome 73+                                                                                                                                                                                                                     |
 | Data Bases               | One of the following: MySQL 5.5+ MariaDB 10.2+ MS SQL Server 2008+ Oracle 11g + PostgreSQL 9.5+                                                                                                                                                                                                               |
-| Other software           | Java v8/11/12 x86/64  Apache Tomcat 7, 8.5, 9 WebSphere Application Server 8.5 JBoss EAP 7.1                                                                                                                                                                                                                  |
+| Other software           | Java v8/11/12 x86/64 Apache Tomcat 7, 8.5, 9 WebSphere Application Server 8.5 JBoss EAP 7.1                                                                                                                                                                                                                   |
 | Hardware requirements    |                                                                                                                                                                                                                                                                                                               |
-|                          | RAM 4 GB minimum.  6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor.                                                                                                                                                                                                               |
+|                          | RAM 4 GB minimum. 6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor.                                                                                                                                                                                                                |
 | User rights requirements |                                                                                                                                                                                                                                                                                                               |
 |                          | Administrative permissions are required to install the software under Microsoft Windows or UNIX system.                                                                                                                                                                                                       |
 
@@ -878,15 +720,15 @@ For more information on repository security, see **[**[**OpenL Tablets WebStudio
 1.  Click **Next**.
 2.  Select a user mode as described in the following table:
 
-| User modes                |                                                                                                                                                                                                                                                                                                            |
-|---------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Mode                      | Description                                                                                                                                                                                                                                                                                                |
-| Demo                      | This is a multi-user mode with the list of users predefined in the default database. The database does not require additional setup. All changes in the database will be lost after the application restart.                                                                                               |
-| Single-user               | Only the user currently logged on to the computer can work with the OpenL Tablets WebStudio. For more information on the single user mode, see **[**[**OpenL Tablets WebStudio User Guide**](http://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20WebStudio%20User%20Guide.pdf)**].** |
-| Multi-user (recommended)  | Multiple users can run OpenL Tablets WebStudio with their unique names. WebStudio is used to authenticate and manage user credentials/permissions with External database.                                                                                                                                  |
-| Active Directory          | Multiple users can run OpenL Tablets WebStudio using their unique user names. Active Directory will be used to authenticate and manage user credentials.                                                                                                                                                   |
-| SSO: CAS                  | Multiple users can run OpenL Tablets WebStudio using their unique user names. CAS (Central Authentication Service) server will be used to authenticate and manage user credentials.                                                                                                                        |
-| SSO: SAML                 | Multiple users can run OpenL Tablets WebStudio using their unique user names. SAML (Security Assertion Markup Language) supporting Identity Provider server will be used to authenticate and manage user credentials.                                                                                      |
+| User modes               |                                                                                                                                                                                                                                                                                                            |
+|--------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Mode                     | Description                                                                                                                                                                                                                                                                                                |
+| Demo                     | This is a multi-user mode with the list of users predefined in the default database. The database does not require additional setup. All changes in the database will be lost after the application restart.                                                                                               |
+| Single-user              | Only the user currently logged on to the computer can work with the OpenL Tablets WebStudio. For more information on the single user mode, see **[**[**OpenL Tablets WebStudio User Guide**](http://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20WebStudio%20User%20Guide.pdf)**].** |
+| Multi-user (recommended) | Multiple users can run OpenL Tablets WebStudio with their unique names. WebStudio is used to authenticate and manage user credentials/permissions with External database.                                                                                                                                  |
+| Active Directory         | Multiple users can run OpenL Tablets WebStudio using their unique user names. Active Directory will be used to authenticate and manage user credentials.                                                                                                                                                   |
+| SSO: CAS                 | Multiple users can run OpenL Tablets WebStudio using their unique user names. CAS (Central Authentication Service) server will be used to authenticate and manage user credentials.                                                                                                                        |
+| SSO: SAML                | Multiple users can run OpenL Tablets WebStudio using their unique user names. SAML (Security Assertion Markup Language) supporting Identity Provider server will be used to authenticate and manage user credentials.                                                                                      |
 
 For **Active Directory**, **SSO: CAS**, **SSO: SAML,** user modes proceed as described in [Integration with External Identity Providers](#_Integration_with_External).
 
@@ -1067,7 +909,7 @@ Figure 12: Configuring authentication via Active Directory
 
 Configuration also can be defined via properties as follows:
 
-**security.ad.domain**=**ldapserver.com**   
+**security.ad.domain**=**ldapserver.com**  
 **security.ad.server-url**=**ldap://ldapserver:3268  
 security.ad.groups-are-managed-in-studio**=**false  
 security.ad.default-group**=**Viewers  
@@ -1328,7 +1170,7 @@ To deploy OpenL Tablets Rule Services, configure a local file system as a data s
 1.  Open the WEB-INF\\classes\\application.properties file.
 2.  Set the following properties with the following values:
 
-    production-repository.factory = repo-file   
+    production-repository.factory = repo-file  
     production-repository.uri = d:/datasource/
 
     **Note:** For proper parsing of Java properties file, the path to the folder must be defined with a slash (‘/’) as the folders delimiter. Back slash “\\” is not allowed.
@@ -1777,7 +1619,7 @@ To configure global JNDI settings, perform the following actions:
 
 To configure authentication data, proceed as follows:
 
-1.  Open the <https://localhost:9043/ibm/console> login page*.*
+1.  Open the <https://localhost:9043/ibm/console> login page\*.\*
 2.  Select **Security – Global \> Authentication \> Java Authentication and Authorization Service.**
 3.  Click **J2C authentication data.**
 4.  In the window that appears, click **New,** fill in all mandatory fields, and click **Ok** and **Save**.
@@ -2070,7 +1912,7 @@ This section provides the most common questions and answers related to the OpenL
 | \#                         | Question                                                                                                                         | Answer                                                                                                                                                                                                                                                                                                                                   |
 | **1**                      | How can I check if Java is installed on my PC?                                                                                   | Proceed as follows: Open **Start \> Control Panel.** Perform either of the following: For Windows XP, double click **Add or Remove Programs**. For Windows 7/Vista, click **Programs \> Programs and Features**. Look through the list for **Java(TM)…** or **Java(TM) Update…** items. If any is present, Java is installed on your PC. |
 | **2**                      | During Java installation, the page for Java registration appears. Do I have to register Java?                                    | No, it is optional. You can close the registration page.                                                                                                                                                                                                                                                                                 |
-| 3                          | How can I check which version of Java is installed on my PC?                                                                     | Open the [**Verify Java Version**](http://java.com/en/download/installed.jsp) page and click the **Verify Java Version** button.  In a few seconds a new page appears where you will find the message like the following one: **Your Java version: Version 6 Update 26**.                                                                |
+| 3                          | How can I check which version of Java is installed on my PC?                                                                     | Open the [**Verify Java Version**](http://java.com/en/download/installed.jsp) page and click the **Verify Java Version** button. In a few seconds a new page appears where you will find the message like the following one: **Your Java version: Version 6 Update 26**.                                                                 |
 | 4                          | How can I see the error message in the Tomcat console that appears when I start Tomcat? The error screen disappears too quickly. | Proceed as follows: Click **Start \> Run**. Locate the \<TOMCAT_HOME\>\\bin folder. Select catalina.bat and enter *run* in the command line.                                                                                                                                                                                             |
 
 # Appendix A: Official Docker Images for OpenL Tablets
