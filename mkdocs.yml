@@ -1,9 +1,9 @@
-site_name: AdrianMkLorum
+site_name: OpenL Tablets
 site_url: https://example.com/
 nav:
     - Home: index.md
     - Level: 
         - About: about.md
-        - Test: test\test01.md
+        - Test: 'test\test01.md'
         - Installation Guide: 'OpenL Tablets - Installation Guide_5.25.md'
 theme: readthedocs
