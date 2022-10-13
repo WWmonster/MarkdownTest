@@ -1,3 +1,5 @@
+[TOC]
+
 # Test01
 
 ## AdrianTest1
