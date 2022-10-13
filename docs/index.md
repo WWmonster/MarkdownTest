@@ -6,7 +6,7 @@
 
 Designed to be straightforward and intuitive for **_business people,_** OpenL Tablets made its rules representation impressively close to documents usually created by business (it intends business requirements, etc.).
 
-
+![](img/indexpage/indexpageimage01.png)
 
 Users can focus on logic as all data, syntax and typing errors are checked while they write rules. Convenient tools help to ensure rules integrity while further editing.
 
