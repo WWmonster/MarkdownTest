@@ -1,4 +1,4 @@
-![](img/indexpage/indexpageimage0.png)
+![](img/indexpage/indexpageimage00.png)
 
 # Easy Business Rules #
 
