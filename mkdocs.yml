@@ -11,4 +11,3 @@ theme: readthedocs
 
 markdown_extensions:
   - markdown.extensions.admonition
-  - pymdownx.tasklist(custom_checkbox=true)
