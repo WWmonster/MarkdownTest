@@ -33,3 +33,14 @@ OpenL Tablets Documentation is licensed under a Creative Commons Attribution 3.0
 ```
 
 And here is another pgf
+
+Now test admonitions
+
+!!! note
+    You should note that the title will be automatically capitalized.
+
+!!! danger "Don't try this at home"
+    ...
+    
+!!! important ""
+    This is an admonition box without a title.
