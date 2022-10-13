@@ -1,4 +1,4 @@
-#Easy Business Rules#
+# Easy Business Rules #
 
 **OpenL Tablets** targets the infamous gap between _business requirements_ (rules and policies) and software implementation.
 
