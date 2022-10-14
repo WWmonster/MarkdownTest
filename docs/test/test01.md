@@ -67,6 +67,10 @@ Reduced width image using html
 
 Reduced width and centered image using html
 
+<p align="center" <img src="../../img/indexpage/indexpageimage00.png"></p>
+
+and again
+
 <img src="../../img/indexpage/indexpageimage00.png" width = "50%" display:block margin-left:auto margin-right:auto>
 
 
