@@ -48,7 +48,7 @@ Now test admonitions
     
  NOW SOME NUMBERED HEADING TESTS
  
-<img src="../img/indexpage/indexpageimage00.png">
+<img src="../img/indexpage/indexpageimage00.png" width = "50">
 
 Got a question? Drop us a line: <support@writage.com>.
 
