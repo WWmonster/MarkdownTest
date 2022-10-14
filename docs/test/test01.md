@@ -57,12 +57,12 @@ Now test admonitions
  
  Full width image using html
  
-<img src="../img/indexpage/indexpageimage00.png">
+<img src="../../img/indexpage/indexpageimage00.png">
 
 
 Reduced width image using html
 
-<img src="../img/indexpage/indexpageimage00.png" width = "400">
+<img src="../../img/indexpage/indexpageimage00.png" width = "400">
 
 Got a question? Drop us a line: <support@writage.com>.
 
