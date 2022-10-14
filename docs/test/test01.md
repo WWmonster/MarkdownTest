@@ -67,11 +67,9 @@ Reduced width image using html
 
 Reduced width and centered image using html and putting it inside a tag
 
-<table cellpadding="0" cellspacing="0" border="0">
-<tr><td align="center">
+<center>
 <img src="../../img/indexpage/indexpageimage00.png" width = "400">
-</td></tr>
-</table>
+</center>
 
 and again
 
