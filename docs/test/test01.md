@@ -65,9 +65,9 @@ Reduced width image using html
 <img src="../../img/indexpage/indexpageimage00.png" width = "400">
 
 
-Reduced width and centered image using html and putting it inside a p tag
+Reduced width and centered image using html and putting it inside a a tag
 
-<p align="center" <img src="../../img/indexpage/indexpageimage00.png"></p>
+<img src="../../img/indexpage/indexpageimage00.png" align="center">
 
 and again
 
@@ -80,11 +80,6 @@ and again
   margin-right: auto;
   width: 50%;
 }
-
-
-
-
-
 
 Got a question? Drop us a line: <support@writage.com>.
 
