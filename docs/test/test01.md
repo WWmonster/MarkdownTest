@@ -65,9 +65,9 @@ Reduced width image using html
 <img src="../../img/indexpage/indexpageimage00.png" width = "400">
 
 
-Reduced width and centered image using html and putting it inside a a tag
+Reduced width and centered image using html and putting it inside a tag
 
-<img src="../../img/indexpage/indexpageimage00.png" width = "300" align="center">
+<a href="link" style="text-align: center"><img src="../../img/indexpage/indexpageimage00.png" width = "300" align="center"></a>
 
 and again
 
