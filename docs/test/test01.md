@@ -64,5 +64,23 @@ Reduced width image using html
 
 <img src="../../img/indexpage/indexpageimage00.png" width = "400">
 
+
+Reduced width and centered image using html
+
+<img src="../../img/indexpage/indexpageimage00.png" width = "50%" display:block margin-left:auto margin-right:auto>
+
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+
+
+
+
+
 Got a question? Drop us a line: <support@writage.com>.
 
