@@ -55,12 +55,12 @@ Now test admonitions
  
  
  
- Full width image
+ Full width image using html
  
 <img src="../img/indexpage/indexpageimage00.png">
 
 
-Reduced width image
+Reduced width image using html
 
 <img src="../img/indexpage/indexpageimage00.png" width = "400">
 
