@@ -1,3 +1,12 @@
+<style type="text/css">
+.centerImage
+{
+ text-align:center;
+ display:block;
+}
+</style>
+
+
 [TOC]
 
 # Test01
@@ -67,7 +76,7 @@ Reduced width image using html
 
 Reduced width and centered image using html and putting it inside a tag
 
-<a href="link" style="text-align: center"><img src="../../img/indexpage/indexpageimage00.png" width = "300"></a>
+<img src="../../img/indexpage/indexpageimage00.png" class="centerImage" width="350">
 
 and again
 
