@@ -48,6 +48,13 @@ Now test admonitions
     
  NOW SOME NUMBERED HEADING TESTS
  
+ Image using markdown
+ 
+![](../img/indexpage/indexpageimage00.png)
+ 
+ 
+ 
+ 
  Full width image
  
 <img src="../img/indexpage/indexpageimage00.png">
