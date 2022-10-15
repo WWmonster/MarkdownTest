@@ -77,8 +77,8 @@ and again
 
 Now here is a list within a list
 1. Apples
-    Royal Gala
-    Other
+        Royal Gala
+        Other
 3. Pears
 4. Bananas
 
