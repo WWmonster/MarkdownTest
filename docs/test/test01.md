@@ -78,9 +78,9 @@ and again
 Now here is a list within a list
 
 - Bullets
-  2 spaces
-    4 spaces
-        8 spaces
+  - 2 spaces
+    - 4 spaces
+        - 8 spaces
 - more
 - more
 - more
