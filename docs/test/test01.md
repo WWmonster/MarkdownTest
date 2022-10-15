@@ -78,18 +78,21 @@ and again
 Now here is a list within a list
 
 - Bullets
+ - test
+ - 
   - 2 spaces
     - 4 spaces
         - 8 spaces
 - more
-
+	
 Conclusion (looking at RTD, not Github): 2 spaces does nothing. 4 spaces gives first indent. 8 spaces gives second indent
 
-A new list but with indents:
+A new list but with tabs:
 
 - Bullets
-    - 1 indent
-        - 2 indents
+	- 1 tab
+		- 2 tabs
+       
             - 3 indents
                 - 4 indents
 - more
@@ -97,10 +100,21 @@ A new list but with indents:
 
 
 1. Apples
-                        1. Royal Gala
-                        1. Other
+	a. Royal Gala
+	b. Other
 1. Pears
-1. Bananas
+		a. dfsf
+		b. dfdsf
+		3. fgdg
+4. Bananas
+			a. fdssf
+			b. dsdf
+			c. dfsdf
+6. dfsd
+				dsfsdf
+				sfsd
+				sdfsd
+8. 
 
 Got a question? Drop us a line: <support@writage.com>.
 
