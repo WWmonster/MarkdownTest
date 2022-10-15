@@ -75,13 +75,10 @@ and again
 
 <img src="../../img/indexpage/indexpageimage00.png" width = "50%" display:block margin-left:auto margin-right:auto>
 
-
-.center {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50%;
-}
+Now here is a list within a list
+1. Apples
+2. Pears
+1. Bananas
 
 Got a question? Drop us a line: <support@writage.com>.
 
