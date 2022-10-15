@@ -100,16 +100,16 @@ A new list but with tabs:
 
 
 1. Apples
-	a. Royal Gala
-	b. Other
+	1. Royal Gala
+	1. Other
 1. Pears
-		a. dfsf
-		b. dfdsf
-		3. fgdg
+		1. dfsf
+		1. dfdsf
+		1. fgdg
 4. Bananas
-			a. fdssf
-			b. dsdf
-			c. dfsdf
+        1. dog
+        2. cat
+		
 6. dfsd
 				dsfsdf
 				sfsd
