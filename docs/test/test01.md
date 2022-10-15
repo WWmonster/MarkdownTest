@@ -97,24 +97,18 @@ A new list but with tabs:
                 - 4 indents
 - more
 
+Conclusion (looking at RTD, not Github): 1 tab gives first indent, 2 tabs gives second indent and so on.
 
-
+Now a numbered list with subnumbers
 1. Apples
-	1. Royal Gala
+	1. Royal Gala. I typed 8 spaces to get this indend.t
 	1. Other
+    1. now with 4 spaces
+    2. now again
+
 1. Pears
-		1. dfsf
-		1. dfdsf
-		1. fgdg
-4. Bananas
-        1. dog
-        2. cat
-		
-6. dfsd
-				dsfsdf
-				sfsd
-				sdfsd
-8. 
+2. 
+
 
 Got a question? Drop us a line: <support@writage.com>.
 
