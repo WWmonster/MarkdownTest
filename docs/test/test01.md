@@ -100,6 +100,7 @@ A new list but with tabs:
 Conclusion (looking at RTD, not Github): 1 tab gives first indent, 2 tabs gives second indent and so on.
 
 Now a numbered list with subnumbers
+
 1. Apples
 	1. Royal Gala. I typed 8 spaces to get this indend.t
 	1. Other
