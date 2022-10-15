@@ -77,8 +77,10 @@ and again
 
 Now here is a list within a list
 1. Apples
-2. Pears
-1. Bananas
+    Royal Gala
+    Other
+3. Pears
+4. Bananas
 
 Got a question? Drop us a line: <support@writage.com>.
 
