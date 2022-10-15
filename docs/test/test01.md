@@ -83,12 +83,15 @@ Now here is a list within a list
         - 8 spaces
 - more
 
+Conclusion (looking at RTD, not Github): 2 spaces does nothing. 4 spaces gives first indent. 8 spaces gives second indent
+
 A new list but with indents:
 
 - Bullets
+    - 1 indent
         - 2 indents
+            - 3 indents
                 - 4 indents
-        - 2 indents
 - more
 
 
