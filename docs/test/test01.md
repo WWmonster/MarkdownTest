@@ -82,7 +82,13 @@ Now here is a list within a list
     - 4 spaces
         - 8 spaces
 - more
-- more
+
+A new list but with indents:
+
+- Bullets
+        - 2 indents
+                - 4 indents
+        - 2 indents
 - more
 
 
