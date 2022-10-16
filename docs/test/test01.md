@@ -133,9 +133,7 @@ More tests
 
 # CODE TEST FOLLOWS
 
-#### Quick Overview
-
-Following style is Code Lines.
+## Following style is Code Lines.
 
 The following code fragment is an example of the rules project descriptor:
 
@@ -221,12 +219,12 @@ Rules document which is usually an excel file in the project.
 
 \</project\>
 
-Following inline style is Code.
+## Following inline style is Code.
 
 Resolving strategies are defined via org.openl.rules.project.resolving.ResolvingStrategy SPI.
 
 1.  Select the **openl-simple-project-archetype** menu item.
-2.  Following style is Code
+2.  **Following style is Code**
 
 As an alternative way is using the following command:  
 mvn archetype:generate   
@@ -272,6 +270,8 @@ Proceed as follows:
 
     }
 
+## Following style is Code
+
 When the class is run, it executes and displays **Good Afternoon, World!**
 
 The following example illustrates using a wrapper with a generated interface in runtime: Style is Code.
@@ -313,7 +313,5 @@ method.invoke(rules, hour);
 }
 
 }
-
-
 Got a question? Drop us a line: <support@writage.com>.
 
