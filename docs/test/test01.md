@@ -110,16 +110,19 @@ Now a numbered list with subnumbers
 1. Pears
 2. 
 
+
 More tests
+
 
 8.  Dsfdfs
 -   Test
 -   test
 1.  Sdfsdf
 2.  Dfsfs
-3.  
 
-    **Bullet list with sub-numbers**
+
+**Bullet list with sub-numbers**
+    
 
 -   Dfsf
 1.  Fsf
