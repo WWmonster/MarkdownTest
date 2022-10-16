@@ -208,37 +208,32 @@ Proceed as follows:
 
 1.  In the project `src` folder, create an interface as follows:
 
-    `public interface Simple {`
+```
+public interface Simple {
+		void hello1(int i);
+}
+```
 
-    `		void hello1(int i);`
+1.  Create a wrapper object as follows: (style is List Code)
 
-    `}`
+```
+import static java.lang.System.out;
+import org.openl.rules.runtime.RulesEngineFactory;
 
-2.  Create a wrapper object as follows: (style is List Code)
+public class Example {
 
-    import static java.lang.System.out;
+		public static void main(String[] args) {
+			//define the interface
+			RulesEngineFactory<Simple > rulesFactory = 
+				new RulesEngineFactory<Simple>("TemplateRules.xls", 
+									Simple.class);
 
-    import org.openl.rules.runtime.RulesEngineFactory;
-
-    public class Example {
-
-    public static void main(String[] args) {
-
-    //define the interface
-
-    RulesEngineFactory\<Simple \> rulesFactory =
-
-    new RulesEngineFactory\<Simple\>("TemplateRules.xls",
-
-    Simple.class);
-
-    Simple rules = (Simple) rulesFactory.newInstance();
-
-    rules.hello1(12);
-
-    }
-
-    }
+			Simple rules = (Simple) rulesFactory.newInstance();
+			rules.hello1(12);
+		
+		}
+}
+```
 
 ## Following style is Code
 
