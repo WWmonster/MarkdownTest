@@ -85,6 +85,36 @@ and again
 
 <img src="../../img/indexpage/indexpageimage00.png" width = "50%" display:block margin-left:auto margin-right:auto>
 
+# LIST TESTS FOLLOW
+
+
+   **Standard numbered list**
+
+1.  Monkey
+2.  Chicken
+3.  Weddings
+
+    **Another numbered list**
+
+4.  Monkey
+5.  Chicken
+6.  Weddings
+
+    Note the lists above actually have two issues: i. they are built on bullet style not numbers ii. The text introducing the list has a list style applied to it.
+
+    In contrast, the lists below are “pure”
+
+**This list created by clicking numbers button. Stays “Normal”**
+
+1.  Monkey
+2.  Chicken
+3.  Weddings
+
+**This list created by clicking numbers button. Stays “Normal”**
+
+1.  Hat
+2.  Shoe
+3.  Jumper
 Now here is a list within a list
 
 - Bullets
