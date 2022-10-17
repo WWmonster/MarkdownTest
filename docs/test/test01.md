@@ -4,6 +4,16 @@
 
 ## AdrianTest1
 
+Break test
+
+Break after cat <br />
+
+| **Dogs**                   | **Cats**                   |
+|----------------------------|----------------------------|
+| Pluto <br />Max<br />Beethoven                      | The one from Tabitha<br />The cat from outer space       |
+| More things in Dogs column | More things in Cats column |
+
+
 Some text just testing if the br tag works properly. Let me place one here <br> in the middle of the sentence.
 
 ## AdrianTest2
