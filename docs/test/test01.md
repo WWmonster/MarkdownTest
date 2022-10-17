@@ -10,7 +10,7 @@ Break after cat <br />
 
 | **Dogs**                   | **Cats**                   |
 |----------------------------|----------------------------|
-| Pluto <br />Max<br />Beethoven                      | The one from Tabitha<br />The cat from outer space       |
+| ● Pluto <br />● Max<br />● Beethoven                      | 1. The one from Tabitha<br />2. The cat from outer space       |
 | More things in Dogs column | More things in Cats column |
 
 
