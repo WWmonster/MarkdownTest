@@ -31,8 +31,7 @@ If rules employ sophisticated logic, they can be written using Java language wit
 ------
 
 !!! important ""
-    This is an admonition box without a title.
-    
+        
     ## Different Rules Formats
     
     ### Decision Tables
