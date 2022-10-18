@@ -3,7 +3,7 @@
 ## Current version 5.26.2
 
 - [Demo](https://github.com/openl-tablets/openl-tablets/releases/download/5.26.2/openl-tablets-demo-5.26.2.zip) (zip)
--[WebStudio](https://github.com/openl-tablets/openl-tablets/releases/download/5.26.2/openl-tablets-webstudio-5.26.2.war) (war)
+- [WebStudio](https://github.com/openl-tablets/openl-tablets/releases/download/5.26.2/openl-tablets-webstudio-5.26.2.war) (war)
 - [Rule Services](https://github.com/openl-tablets/openl-tablets/releases/download/5.26.2/openl-tablets-ws-all-5.26.2.war) (war)
 - [Rules Engine](https://github.com/openl-tablets/openl-tablets/releases/download/5.26.2/openl-tablets-core-5.26.2.zip) (zip with jars)
 
