@@ -1,8 +1,9 @@
 [TOC]
 
-<div style="background:LightCyan;">
-<p style="color:red;">This is a red paragraph.</p>
-<p>Unfortunately, Markdown elements cannot be put inside html. Also, putting a div anywhere on the page causes problems in RTD</p>
+<div markdown="1" style="background:LightCyan;">
+	
+<p style="color:red;">This is a red paragraph inside a blue div.</p>
+<p>Unfortunately, Markdown elements cannot be put inside html as seen in the lines below</p>
 
 	
 # Test01
@@ -10,7 +11,9 @@
 ## Test 02
 
 End of div test
+	
 </div>
+
 ## AdrianTest1
 
 Break test
