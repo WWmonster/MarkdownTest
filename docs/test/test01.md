@@ -1,5 +1,7 @@
 [TOC]
 
+<p style="color:red;">This is a red paragraph.</p>
+
 # Test01
 
 ## AdrianTest1
