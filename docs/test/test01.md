@@ -70,6 +70,10 @@ Now test admonitions
 
 !!! note
     You should note that the title will be automatically capitalized.
+    Can it have another line
+    ### Can it contain formatting?
+    **like this**
+    *or this*
 
 !!! danger "Don't try this at home"
     ...
