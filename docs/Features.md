@@ -1,4 +1,4 @@
-# Reatures
+# Features
 
 ## User Friendly Engine
 
