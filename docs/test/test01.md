@@ -1,6 +1,6 @@
 [TOC]
 
-<div markdown="1" style="background:LightCyan;">
+<DIV markdown="1" style="background:LightCyan;">
 	
 <p style="color:red;">This is a red paragraph inside a blue div.</p>
 <p>Unfortunately, Markdown elements cannot be put inside html as seen in the lines below</p>
@@ -12,7 +12,8 @@
 
 End of div test
 	
-</div>
+</DIV>
+
 
 ## AdrianTest1
 
