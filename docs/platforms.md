@@ -1,4 +1,4 @@
-<html>
+
 <h1>Supported Platforms</h1><!-- ============== MAIN TABLE =====================-->
 <div style="margin-top: 20px; padding: 3px;">
 <table class="sysPropsTable">
@@ -210,5 +210,3 @@
 <p>Note: <a href="http://www.oracle.com/java/technologies/java-se-support-roadmap.html">Oracle Java SE Support Roadmap</a> &amp; 
 <a href="https://www.java.com/releases/">Java releases</a><br /> 
 Note: <a href="http://tomcat.apache.org/whichversion.html">Apache Tomcat Versions</a></p>
-
-</html>
