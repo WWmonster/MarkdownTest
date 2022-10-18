@@ -3,13 +3,14 @@
 <div style="background:LightCyan;">
 <p style="color:red;">This is a red paragraph.</p>
 <p>Unfortunately, Markdown elements cannot be put inside html. Also, putting a div anywhere on the page causes problems in RTD</p>
-</div>
+
 	
 # Test01
 	
 ## Test 02
 
-
+End of div test
+</div>
 ## AdrianTest1
 
 Break test
