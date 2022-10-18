@@ -1,5 +1,7 @@
 # Features
 
+<p style="color:red;">This is a red paragraph.</p>
+
 <div style="background:red;">test</div>
 <p>This is a paragraph.</p>
 
