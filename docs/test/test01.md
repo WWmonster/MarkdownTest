@@ -1,8 +1,14 @@
 [TOC]
 
 <p style="color:red;">This is a red paragraph.</p>
+<div style="background:LightCyan;">
+<p>Markdown elements cannot be put inside html</p?
+So the following separated lines just get bunched together and the hashes ignored
 
 # Test01
+	
+## Test 02
+</div>
 
 ## AdrianTest1
 
