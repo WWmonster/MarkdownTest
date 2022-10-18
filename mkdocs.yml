@@ -5,7 +5,7 @@ nav:
     - Level: 
         - News: news.md
         - What is OpenL Tablets?: whatis.md
-        - Features: Features.md
+        - Features: features.md
         - Supported Platforms: platforms.md
         
         - Documentation: documentation.md
