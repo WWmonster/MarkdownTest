@@ -1,6 +1,24 @@
 <html>
-<h2>Supported Platforms</h2><!-- ============== MAIN TABLE =====================-->
-<div class="sysPropsTableWrap" style="margin-top: 15px;">
+<h1>Supported Platforms</h1><!-- ============== MAIN TABLE =====================-->
+<div style="margin-top: 20px; padding: 3px;">
+<table class="sysPropsTable">
+<tbody>
+<tr>
+<td><span class="supported">Y</span></td>
+<td>Fully supported</td>
+</tr>
+<tr>
+<td><span class="potentially">!</span></td>
+<td>Potentially supported but not tested</td>
+</tr>
+<tr>
+<td><span class="notsupported">N</span></td>
+<td>Not supported</td>
+</tr>
+</tbody>
+</table>
+</div>  
+  <div class="sysPropsTableWrap" style="margin-top: 15px;">
 <table class="sysPropsTable" style="margin: auto; padding-bottom: 15px; text-align: center;" cellspacing="0">
 <tbody>
 <tr>
@@ -192,21 +210,5 @@
 <p>Note: <a href="http://www.oracle.com/java/technologies/java-se-support-roadmap.html">Oracle Java SE Support Roadmap</a> &amp; 
 <a href="https://www.java.com/releases/">Java releases</a><br /> 
 Note: <a href="http://tomcat.apache.org/whichversion.html">Apache Tomcat Versions</a></p>
-<div style="margin-top: 20px; padding: 3px;">
-<table class="sysPropsTable">
-<tbody>
-<tr>
-<td><span class="supported">Y</span></td>
-<td>Fully supported</td>
-</tr>
-<tr>
-<td><span class="potentially">!</span></td>
-<td>Potentially supported but not tested</td>
-</tr>
-<tr>
-<td><span class="notsupported">N</span></td>
-<td>Not supported</td>
-</tr>
-</tbody>
-</table>
+
 </html>
