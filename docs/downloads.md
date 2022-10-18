@@ -2,7 +2,7 @@
 
 ## Current version 5.26.2
 
-- [Demo] (https://github.com/openl-tablets/openl-tablets/releases/download/5.26.2/openl-tablets-demo-5.26.2.zip)
+- [Demo](https://github.com/openl-tablets/openl-tablets/releases/download/5.26.2/openl-tablets-demo-5.26.2.zip)
 - WebStudio (war)
 - Rule Services (war)
 - Rules Engine (zip with jars)
