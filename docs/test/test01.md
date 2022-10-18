@@ -2,13 +2,13 @@
 
 <p style="color:red;">This is a red paragraph.</p>
 <div style="background:LightCyan;">
-<p>Markdown elements cannot be put inside html</p?
-So the following lines get ignored by GitHub and bunched together without formatting by RTD
+<p>Unfortunately, Markdown elements cannot be put inside html.</p?
+</div>
 
 # Test01
 	
 ## Test 02
-</div>
+
 
 ## AdrianTest1
 
