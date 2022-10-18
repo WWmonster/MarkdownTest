@@ -30,31 +30,34 @@ If rules employ sophisticated logic, they can be written using Java language wit
 
 ------
 
-## Different Rules Formats
-
-### Decision Tables
-
-Associate conditions with actions to perform and values to return. Make complex decisions with absolute clarity.
-
-### Lookup Tables
-
-You can create multidimensional version of decision table.
-
-### Simplified Decision and Lookup Tables
-
-Just name your simple rules, and OpenL will understand the rest. Lots of simplifications are possible for common rules.
-
-### Spreadsheet Calculations
-
-Create Excel-like calculations rules. Any calculations can be flexibly captured in this format.
-
-### Decision Trees
-
-Use the ColumnMatch component to capture rules as decision tree.
-
-### Algorithms and Flows
-
-TBasic (table basic) and method tables can handle sophisticated logic.
+!!! important ""
+    This is an admonition box without a title.
+    
+    ## Different Rules Formats
+    
+    ### Decision Tables
+    
+    Associate conditions with actions to perform and values to return. Make complex decisions with absolute clarity.
+    
+    ### Lookup Tables
+    
+    You can create multidimensional version of decision table.
+    
+    ### Simplified Decision and Lookup Tables
+    
+    Just name your simple rules, and OpenL will understand the rest. Lots of simplifications are possible for common rules.
+    
+    ### Spreadsheet Calculations
+    
+    Create Excel-like calculations rules. Any calculations can be flexibly captured in this format.
+    
+    ### Decision Trees
+    
+    Use the ColumnMatch component to capture rules as decision tree.
+    
+    ### Algorithms and Flows
+    
+    TBasic (table basic) and method tables can handle sophisticated logic.
 
 ------
 
