@@ -27,7 +27,6 @@ Optimized execution engine ensures rules performance and productivity.
 If rules employ sophisticated logic, they can be written using Java language with many simplifications and productivity enhancements called BEX grammar extension.
 
 ------
-------
 
 ## Different Rules Formats
 
