@@ -1,11 +1,7 @@
 [TOC]
 
 <p style="color:red;">This is a red paragraph.</p>
-<p>Unfortunately, Markdown elements cannot be put inside html. Also, putting a div anywhere on the page causes problems in RTD</p?
-
-
-	
-	
+<p>Unfortunately, Markdown elements cannot be put inside html. Also, putting a div anywhere on the page causes problems in RTD</p>
 	
 # Test01
 	
