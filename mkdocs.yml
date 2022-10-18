@@ -7,8 +7,9 @@ nav:
         - What is OpenL Tablets?: whatis.md
         - Features: features.md
         - Supported Platforms: platforms.md
-        - 
+        - : empty.md
         - Downloads: downloads.md
+        - Release Notes: releasenotes.md
         - Documentation: documentation.md
         - Test: 'test/test01.md'
 theme: readthedocs
