@@ -57,7 +57,9 @@ Use the ColumnMatch component to capture rules as decision tree.
 TBasic (table basic) and method tables can handle sophisticated logic.
 
 ------
+
 ------
+
 ## Versioning
 
 ### Rules Versioning
@@ -73,6 +75,7 @@ Version control management is available through the rules repository.
 Rules versioning will work even for multi-module and multisource deployments.
 
 ------
+
 ------
 
 ## Powerful Environment
@@ -98,6 +101,7 @@ Store any file along with your rules in rules repository.
 Control access and allow operations to any rules assets through fine-grained security policies.
 
 ------
+
 ------
 
 ## Live Deployment
@@ -127,6 +131,7 @@ Run rules in a sandbox environment before promoting to production.
 Manage rules projects and deployments from third-party tools using the rules repository API.
 
 ------
+
 ------
 
 ## Development Support
@@ -144,6 +149,7 @@ Any Java classes, their methods and attributes can be easily accessed and called
 There is many ways to customize and extend OpenL Tablets.
 
 ------
+
 ------
 
 ## Integration
@@ -157,6 +163,7 @@ Expose rules as efficient, scalable and standardized services using Service Fron
 Use rules as usual Java methods from your code.
 
 ------
+
 ------
 
 ## Editing
@@ -169,6 +176,7 @@ Create tables with assistance of guided wizards.
 Use powerful table editor with inline cell editors matching cell type and Excel like formatting.
 
 ------
+
 ------
 
 ## Cool Features
@@ -182,6 +190,7 @@ Try hypothetical rules and develop relevant insight.
 Switch on gaps and overlaps checks for conditions of decision and lookup tables. Versioned rules are always checked for gaps and overlaps.
 
 ------
+
 ------
 
 ## Model
@@ -199,6 +208,7 @@ Create data types directly in rules. Inherit them from other data types or even 
 Store data in rules files and access it from application. Maintain it in database like structure.
 
 ------
+
 ------
 
 ## Debug and Testing
