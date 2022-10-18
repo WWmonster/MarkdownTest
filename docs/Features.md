@@ -1,6 +1,6 @@
 # Features
 
-<div style="background:red">test</div>
+<div style="background:red;">test</div>
 
 
 ## User Friendly Engine
