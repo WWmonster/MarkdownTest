@@ -28,6 +28,8 @@ If rules employ sophisticated logic, they can be written using Java language wit
 
 ------
 
+------
+
 ## Different Rules Formats
 
 ### Decision Tables
