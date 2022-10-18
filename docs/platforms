@@ -1,3 +1,4 @@
+<html>
 <h2>Supported Platforms</h2><!-- ============== MAIN TABLE =====================-->
 <div class="sysPropsTableWrap" style="margin-top: 15px;">
 <table class="sysPropsTable" style="margin: auto; padding-bottom: 15px; text-align: center;" cellspacing="0">
@@ -208,3 +209,4 @@ Note: <a href="http://tomcat.apache.org/whichversion.html">Apache Tomcat Version
 </tr>
 </tbody>
 </table>
+</htmll>
