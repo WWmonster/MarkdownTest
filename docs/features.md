@@ -1,9 +1,6 @@
 # Features
 
-<p style="color:red;">This is a red paragraph.</p>
-
-<div style="background:red;">test</div>
-<p>This is a paragraph.</p>
+<div style="background:LightCyan;">
 
 ## User Friendly Engine
 
@@ -30,7 +27,7 @@ Optimized execution engine ensures rules performance and productivity.
 ### Easier Code Than Java
 
 If rules employ sophisticated logic, they can be written using Java language with many simplifications and productivity enhancements called BEX grammar extension.
-
+</div>
 
 ## Different Rules Formats
 
