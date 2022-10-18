@@ -17,7 +17,16 @@ End of div test
 
 ## AdrianTest1
 
+<span style="background:LightCyan;">
+more testing
+
+*here is some markdown*
+### And here
+</span>
+	
 Break test
+
+
 
 Break after cat <br />
 
