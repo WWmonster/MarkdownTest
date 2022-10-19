@@ -193,11 +193,11 @@ To install JDK, perform the following steps:
 
 1.  Download JDK.
 
-Options are as follows:
-
--   Download OpenJDK 11 available at <https://openjdk.java.net/projects/jdk/11/>.
--   Download jdk-8u231 or later from <http://www.oracle.com/technetwork/java/javase/downloads/index.html> to the target directory.
-
+	Options are as follows:
+	
+	-   Download OpenJDK 11 available at <https://openjdk.java.net/projects/jdk/11/>.
+	-   Download jdk-8u231 or later from <http://www.oracle.com/technetwork/java/javase/downloads/index.html> to the target directory.
+	
     Further in the document, this catalog is referred to as `<JAVA_HOME>`.
 
     **Note:** It is highly recommended to avoid installing Java in the default Program Files directory because it can cause problems due to space characters in the path to the folder.
