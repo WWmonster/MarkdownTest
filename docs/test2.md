@@ -261,7 +261,6 @@ To install Apache Tomcat 7.0.x or later, proceed as follows:
 5.  Extract the downloaded ZIP file into the target folder on the computer.
 
  This folder is referred to as `<TOMCAT_HOME> `further in this document.
-
 1.  For Tomcat web server 7.0, to configure JVM options, open the `TOMCAT_HOME/conf/server.xml `file and add the `URIEncoding="UTF-8"` attribute for all `<Connector>` elements.
 
 	For example:
