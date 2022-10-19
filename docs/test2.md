@@ -314,6 +314,7 @@ Proceed as follows:
 -XX: +UseConcMarkSweepGC
 -XX:PermSize=128m
 -XX:MaxPermSize=512m
+
 ```
 
 	Note that every option must be manually entered in a separate row.
