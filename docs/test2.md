@@ -205,9 +205,9 @@ To install JDK, perform the following steps:
     For more information on the installation, see <http://www.oracle.com/technetwork/java/javase/index-137561.html>.
 
 1.  Install JDK according to the instructions.  
-
- Now the environment variable `JAVA_HOME` must be set to the pathname of the directory where JDK is installed.
-
+  
+  Now the environment variable `JAVA_HOME` must be set to the pathname of the directory where JDK is installed.
+  
  1.  For MS Windows, set the environment variable `JAVA_HOME` as follows:
  2.  To open the **System Properties** window, press **\<Windows\> + \<Pause\>** or right click the **My Computer** icon and in the pop-up menu, select **Properties**.
  3.  In the **Advanced** tab, click **Environment Variables**.
