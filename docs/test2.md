@@ -2,16 +2,11 @@
 
 ```
 Release 5.26
-
-Document number: TP_OpenL_IG_2.7_LSh
-Revised: 07-21-2022
-
-OpenL Tablets Documentation is licensed under a Creative Commons Attribution 3.0 United States License.
 ```
 
-Table of Contents
-
-[TOC]
+```
+OpenL Tablets Documentation is licensed under a Creative Commons Attribution 3.0 United States License.
+```
 
 ## Preface
 
@@ -21,7 +16,11 @@ OpenL Tablets provides a set of tools addressing BRMS related capabilities inclu
 
 The OpenL Tablets Installation Guide provides instructions for installing and customizing OpenL Tablets software. The document describes how to install OpenL Tablets under Apache Tomcat, deploy, and set up OpenL Tablets Rule Services.
 
-All installation and configuration can be done in the `openl-default.properties` file. The file contains a detailed description for all properties. For more information on accessing this file, contact your system administrator.
+All installation and configuration can be done in the `application.properties` file. For an example of this file with all properties described, see <http://localhost:8080/webstudio/web/config/application.properties> or access it at the index page of the installed OpenL Tablets WebStudio.
+
+![](media/1ff42f8d9b8012a5f4307404f564d115.png)
+
+*Figure: Accessing the application.properties file example*
 
 This section includes the following topics:
 
@@ -32,15 +31,14 @@ This section includes the following topics:
 
 ### How This Guide Is Organized
 
-| Section                                                                                                                                                               | Description                                                                                                      |
-|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------|
-| [Before You Begin](#_Before_You_Begin)                                                                                                                                | Lists system requirements for installing and using OpenL Tablets software.                                       |
-| [Install OpenL Tablets WebStudio under Apache Tomcat](#_Install_OpenL_Tablets)                                                                                        | Explains how to install OpenL Tablets WebStudio under Apache Tomcat.                                             |
-| [Deploy OpenL Tablets Rule Services under Apache Tomcat](#deploy-openl-tablets-rule-services-under-apache-tomcat)                                                     | Designed for rule developers who need to use business rules as separate web services.                            |
-| [Install OpenL Tablets WebStudio and OpenL Tablets Rule Services on WebSphere Application Server](#configuring-openl-tablets-rule-services-via-azure-blob-connection) | Explains how to install OpenL Tablets WebStudio and OpenL Tablets Rule Services on WebSphere Application Server. |
-| [Install OpenL Tablets WebStudio and OpenL Tablets Rule Services on JBoss Application Server](#_Step_3:_Run)                                                          | Explains how to install OpenL Tablets WebStudio and OpenL Tablets Rule Services on JBoss Application Server.     |
-| [OpenL Tablets WebStudio and OpenL Tablets Rule Services Integration](#openl-tablets-webstudio-and-rule-services-integration)                                         | Explains how to set up OpenL Tablets WebStudio and OpenL Tablets Rule Services as an integrated environment.     |
-| [Troubleshooting Notes](#_Troubleshooting_Notes) [Frequently Asked Questions](#frequently-asked-questions)                                                            | Provides useful information related to OpenL Tablets installation.                                               |
+| Section                                                                                                                                                                                     | Description                                                                                                  |
+|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------------------|
+| [Before You Begin](#_Before_You_Begin)                                                                                                                                                      | Lists system requirements for installing and using OpenL Tablets software.                                   |
+| [Install OpenL Tablets WebStudio under Apache Tomcat](#_Install_OpenL_Tablets)                                                                                                              | Explains how to install OpenL Tablets WebStudio under Apache Tomcat.                                         |
+| [Deploy OpenL Tablets Rule Services under Apache Tomcat](#deploy-openl-tablets-rule-services-under-apache-tomcat)                                                                           | Designed for rule developers who need to use business rules as separate web services.                        |
+| [Install OpenL Tablets WebStudio and OpenL Tablets Rule Services on JBoss Application Server](#install-openl-tablets-webstudio-and-openl-tablets-rule-services-on-jboss-application-server) | Explains how to install OpenL Tablets WebStudio and OpenL Tablets Rule Services on JBoss Application Server. |
+| [OpenL Tablets WebStudio and OpenL Tablets Rule Services Integration](#openl-tablets-webstudio-and-rule-services-integration)                                                               | Explains how to set up OpenL Tablets WebStudio and OpenL Tablets Rule Services as an integrated environment. |
+| [Troubleshooting Notes](#_Troubleshooting_Notes) [Frequently Asked Questions](#frequently-asked-questions)                                                                                  | Provides useful information related to OpenL Tablets installation.                                           |
 
 ### Audience
 
@@ -68,7 +66,7 @@ The following styles and conventions are used in this guide:
 | `Courier`                  | Represents file and directory names, code, system messages, and command-line commands.                                                                                                                                                                                                                                      |
 | `Courier Bold`             | Represents emphasized text in code.                                                                                                                                                                                                                                                                                         |
 | **Select File \> Save As** | Represents a command to perform, such as opening the File menu and selecting Save As.                                                                                                                                                                                                                                       |
-| *Italic*                   | Represents any information to be entered in a field. Represents documentation titles.                                                                                                                                                                                                                                       |
+| *Italic*                   | Represents any information to be entered in a field.  Represents documentation titles.                                                                                                                                                                                                                                      |
 | \< \>                      | Represents placeholder values to be substituted with user specific values.                                                                                                                                                                                                                                                  |
 | Hyperlink                  | Represents a hyperlink. Clicking a hyperlink displays the information topic or external source.                                                                                                                                                                                                                             |
 | **[name of guide]**        | Reference to another guide that contains additional information on a specific feature.                                                                                                                                                                                                                                      |
@@ -89,13 +87,11 @@ The following table covers system requirements for installing and running OpenL 
 | Operating systems | One of the following: Microsoft Windows 7+ x86/64 Ubuntu 12.x Linux 3.x **Note:** OpenL Tablets software can potentially run on any operating system that supports Java Virtual Machine, for example, Mac OS. This table lists operating systems on which the OpenL Tablets software is tested and supported. |
 | Browsers          | One of the following: Microsoft Internet Explorer 11.x Firefox 60 ESR or later Chrome 73+                                                                                                                                                                                                                     |
 | Data Bases        | One of the following: MySQL 5.5+ MariaDB 10.2+ MS SQL Server 2008+ Oracle 11g + PostgreSQL 9.5+                                                                                                                                                                                                               |
-| Other software    | Java v8/11/12 x86/64Apache Tomcat 7, 8.5, 9 WebSphere Application Server 8.5 JBoss EAP 7.1                                                                                                                                                                                                                    |
+| Other software    | Java v8/11/12 x86/64  Apache Tomcat 7, 8.5, 9 WebSphere Application Server 8.5 JBoss EAP 7.1                                                                                                                                                                                                                  |
 
-| Hardware requirements |                                                                                                |
-|-----------------------|------------------------------------------------------------------------------------------------|
-|                       | RAM 4 GB minimum. 6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor. |
-
--   
+| Hardware requirements |                                                                                                 |
+|-----------------------|-------------------------------------------------------------------------------------------------|
+|                       | RAM 4 GB minimum.  6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor. |
 
 | User rights requirements |                                                                                                         |
 |--------------------------|---------------------------------------------------------------------------------------------------------|
@@ -159,7 +155,7 @@ To start OpenL Tablets WebStudio in the cluster mode, the `openl.home.shared` or
 
 ![](media/a9b21678a299178dbf55c69e15dc64db.jpeg)
 
-*Figure 1: Multiple OpenL Tablets WebStudio instances sharing the same drive*
+*Figure: Multiple OpenL Tablets WebStudio instances sharing the same drive*
 
 #### Sharing webstudio.properties
 
@@ -213,30 +209,30 @@ Options are as follows:
 Now the environment variable `JAVA_HOME` must be set to the pathname of the directory where JDK is installed.
 
 1.  For MS Windows, set the environment variable `JAVA_HOME` as follows:
-	2.  To open the **System Properties** window, press **\<Windows\> + \<Pause\>** or right click the **My Computer** icon and in the pop-up menu, select **Properties**.
-	3.  In the **Advanced** tab, click **Environment Variables**.
-	4.  In the **System variables** area, click **New**.
-	5.  In the **Variable** name field, enter *JAVA_HOME.*
-	6.  In the **Variable** value field, enter the path to the directory where JDK is installed, for example, `C:\Java\jdk1.8.0_231`.
-	7.  Click **OK** to complete.
+2.  To open the **System Properties** window, press **\<Windows\> + \<Pause\>** or right click the **My Computer** icon and in the pop-up menu, select **Properties**.
+3.  In the **Advanced** tab, click **Environment Variables**.
+4.  In the **System variables** area, click **New**.
+5.  In the **Variable** name field, enter *JAVA_HOME.*
+6.  In the **Variable** value field, enter the path to the directory where JDK is installed, for example, `C:\Java\jdk1.8.0_231`.
+7.  Click **OK** to complete.
 8.  For Unix/Linux environments, assuming the target directory is `/usr/lib/jvm/jdk1.8.0_231`, to set up the environment variable `JAVA_HOME` for a single user, proceed as follows:
-	9.  Log in to the account and open `.bash_profile:nano ~/.bash_profile`.
-	10. Add the following line:
+9.  Log in to the account and open `.bash_profile:nano ~/.bash_profile`.
+10. Add the following line:
 
     `export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_231`.
 
-	11. Add or correct the system PATH as follows:
+11. Add or correct the system PATH as follows:
 
     `export PATH=$PATH:$JAVA_HOME/bin`
 
-	12. To save, press **CTRL+O** and then press **CTRL+X** to exit.
+12. To save, press **CTRL+O** and then press **CTRL+X** to exit.
 13. For Unix/Linux environments, assuming the target directory is `/usr/lib/jvm/jdk1.8.0_231`, to set up the environment variable `JAVA_HOME` for all users, proceed as follows:
-	14. Log in as root and open the `nano /etc/profile` profile.
-	15. Add the following line:
+14. Log in as root and open the `nano /etc/profile` profile.
+15. Add the following line:
 
     `export JAVA_HOME=/usr/lib/jvm/jdk1.8.0_231`.
 
-	16. Add or correct the system PATH as follows:
+16. Add or correct the system PATH as follows:
 
     `export PATH=$PATH:$JAVA_HOME/bin`.
 
@@ -363,13 +359,19 @@ sudo /etc/init.d/tomcat7 start
 
 All necessary folders must be located in `/var/lib/tomcat7`.
 
-1.  To ensure that Tomcat works properly, open the browser and enter [*http://localhost:8080*](http://localhost:8080).  
-    If all is correct, Apache Tomcat displays the welcome page with a message resembling the following:  
-    \*\*If you're seeing this, you've successfully installed Tomcat. Congratulations!  
-    \*\*If the 404 error appears, try to restart Tomcat as follows:  
-    sudo /etc/init.d/tomcat7 restart  
-    Alternatively, stop Tomcat by entering the following command in command line and then start it as described previously:  
-    sudo /etc/init.d/tomcat7 stop
+1.  To ensure that Tomcat works properly, open the browser and enter *http://localhost:8080*.
+
+If all is correct, Apache Tomcat displays the welcome page with a message resembling the following:
+
+**If you're seeing this, you've successfully installed Tomcat. Congratulations!**
+
+If the 404 error appears, try to restart Tomcat as follows:
+
+sudo /etc/init.d/tomcat7 restart
+
+Alternatively, stop Tomcat by entering the following command in command line and then start it as described previously:
+
+sudo /etc/init.d/tomcat7 stop
 
 ##### Installing Apache Tomcat from ZIP File
 
@@ -412,7 +414,7 @@ The following information is displayed:
 
 ![](media/315b31b0d9c0137373b2d81b29551174.png)
 
-*Figure 2: OpenL Tablets package is added*
+*Figure: OpenL Tablets package is added*
 
 1.  If some `sh` files are not executable, enter the following command:
 
@@ -578,7 +580,7 @@ Ensure all database settings are completed.
 
 ![](media/6b1f61c6269e4c3be6d13a97f4228f2a.png)
 
-*Figure 3: Creating a connection to the Oracle database in the installation wizard*
+*Figure: Creating a connection to the Oracle database in the installation wizard*
 
 1.  Click **Finish** to close the wizard when the installation is complete.
 2.  Log in with credentials of an administrative user defined in the third step of the installation wizard, in the **Configure initial users** section.
@@ -587,7 +589,7 @@ Note that even after configuring the database as user storage, a default user is
 
 ![](media/74d10c2b2686c171b48f6656b88d1629.png)
 
-*Figure 4: Managing users in the User Management section of OpenL Tablets WebStudio*
+*Figure: Managing users in the User Management section of OpenL Tablets WebStudio*
 
 Right after applying changes in OpenL Tablets WebStudio, the updates are applied to the database. A user can log in and work under a newly created account in OpenL Tablets WebStudio.
 
@@ -606,10 +608,6 @@ Right after applying changes in OpenL Tablets WebStudio, the updates are applied
 -   OPENL_PROJECTS
 -   OPENL_PROJECT_TAGS
 -   OPENL_TAG_TEMPLATES
-
-```
-
-```
 
 #### Configuring MySQL Database as External User Storage
 
@@ -662,7 +660,7 @@ The **MariaDB Setup Wizard Welcome** window appears.
 
 ![](media/374a4090e431b3fb9109f4cd4f92f3b2.png)
 
-*Figure 6: Setting properties for the MariaDB database*
+*Figure: Setting properties for the MariaDB database*
 
 1.  Click **Finish** to close the wizard when the installation is complete.
 2.  Start HeidiSQL application.
@@ -671,7 +669,7 @@ The **MariaDB Setup Wizard Welcome** window appears.
 
     ![](media/d0b7936d6f8edbf001ae8fd8060ab59c.png)
 
-*Figure 7: Creating a connection to the MariaDB database*
+*Figure: Creating a connection to the MariaDB database*
 
 1.  Click **Open** and save the changes.
 
@@ -694,13 +692,13 @@ In this section, as an example, Oracle SQL Developer 3.2.2 is used.
 
 ![](media/bcef7557ea9819f858e80d2338e3f516.png)
 
-*Figure 8: Creating a connection to the Oracle database*
+*Figure: Creating a connection to the Oracle database*
 
 1.  Enter username and password values defined when installing the database.
 
 ### Setting Up OpenL Tablets WebStudio with Installation Wizard
 
-This topic describes the steps that must be taken after the first run of OpenL Tablets WebStudio under Tomcat or WebSphere Application Server. For more information, see [Install OpenL Tablets WebStudio and OpenL Tablets Rule Services on WebSphere Application Server](#configuring-openl-tablets-rule-services-via-azure-blob-connection). Accept the default options provided by the wizard by clicking **Next** to move to the next step or change the options as required and click **Next** to proceed.
+This topic describes the steps that must be taken after the first run of OpenL Tablets WebStudio under Tomcat. Accept the default options provided by the wizard by clicking **Next** to move to the next step or change the options as required and click **Next** to proceed.
 
 Proceed as follows:
 
@@ -736,35 +734,36 @@ The following table explains URL values according to the database type:
 | MS SQL         | `jdbc:sqlserver://[serverName[\instanceName][:port]][;property=value[;property=value]]` |
 | PostgreSQL     | `jdbc:postgresql://[host][:port]/[schema]`                                              |
 
-For more details about how to configure the repository of a specific type, please refer to the corresponding subchapter below:
+For more details about how to configure the repository of a specific type, please refer to the corresponding section below:
 
 -   [Configuring OpenL Tablets WebStudio via JDBC Connection](#configuring-openl-tablets-webstudio-via-jdbc-connection)
 -   [Configuring OpenL Tablets WebStudio via JNDI Connection](#configuring-openl-tablets-webstudio-via-jndi-connection)
 -   [Configuring OpenL Tablets WebStudio via Amazon Simple Storage Service](#configuring-openl-tablets-webstudio-via-amazon-simple-storage-service)
+-   [Connecting to OpenL Tablets WebStudio via Proxy](#connecting-to-openl-tablets-webstudio-via-proxy)
 
 For more information on repository security, see **[**[**OpenL Tablets WebStudio User Guide**](https://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20WebStudio%20User%20Guide.pdf)**],** the **Repository Settings** section.
 
 1.  Click **Next**.
 2.  Select a user mode as described in the following table:
 
-| Mode                     | Description                                                                                                                                                                                                                                                                                                 |
-|--------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Demo                     | This is a multi-user mode with the list of users predefined in the default database. The database does not require additional setup. All changes in the database will be lost after the application restart.                                                                                                |
-| Single-user              | Only the user currently logged on to the computer can work with the OpenL Tablets WebStudio. For more information on the single user mode, see **[**[**OpenL Tablets WebStudio User Guide**](https://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20WebStudio%20User%20Guide.pdf)**].** |
-| Multi-user (recommended) | Multiple users can run OpenL Tablets WebStudio with their unique names. WebStudio is used to authenticate and manage user credentials/permissions with External database.                                                                                                                                   |
-| Active Directory         | Multiple users can run OpenL Tablets WebStudio using their unique user names. Active Directory will be used to authenticate and manage user credentials.                                                                                                                                                    |
-| SSO: CAS                 | Multiple users can run OpenL Tablets WebStudio using their unique user names. CAS (Central Authentication Service) server will be used to authenticate and manage user credentials.                                                                                                                         |
-| SSO: SAML                | Multiple users can run OpenL Tablets WebStudio using their unique user names. SAML (Security Assertion Markup Language) supporting Identity Provider server will be used to authenticate and manage user credentials.                                                                                       |
-| SSO:OAuth2               | Multiple users can run OpenL Tablets WebStudio using their unique user names. User projects will be located in the './openl-demo/user-workspace/USERNAME' folder. OAuth2 supporting the identity provider server will be used to authenticate and manage user credentials.                                  |
+| Mode                      | Description                                                                                                                                                                                                                                                                                                 |
+|---------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Demo                      | This is a multi-user mode with the list of users predefined in the default database. The database does not require additional setup. All changes in the database will be lost after the application restart.                                                                                                |
+| Single-user               | Only the user currently logged on to the computer can work with the OpenL Tablets WebStudio. For more information on the single user mode, see **[**[**OpenL Tablets WebStudio User Guide**](https://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20WebStudio%20User%20Guide.pdf)**].** |
+| Multi-user (recommended)  | Multiple users can run OpenL Tablets WebStudio with their unique names. WebStudio is used to authenticate and manage user credentials/permissions with External database.                                                                                                                                   |
+| Active Directory          | Multiple users can run OpenL Tablets WebStudio using their unique user names. Active Directory will be used to authenticate and manage user credentials.                                                                                                                                                    |
+| SSO: CAS                  | Multiple users can run OpenL Tablets WebStudio using their unique user names. CAS (Central Authentication Service) server will be used to authenticate and manage user credentials.                                                                                                                         |
+| SSO: SAML                 | Multiple users can run OpenL Tablets WebStudio using their unique user names. SAML (Security Assertion Markup Language) supporting Identity Provider server will be used to authenticate and manage user credentials.                                                                                       |
+| SSO:OAuth2                | Multiple users can run OpenL Tablets WebStudio using their unique user names. User projects will be located in the './openl-demo/user-workspace/USERNAME' folder. OAuth2 supporting the identity provider server will be used to authenticate and manage user credentials.                                  |
 
 For **Active Directory**, **SSO: CAS**, **SSO: SAML,** and **SSO:OAuth2,** user modes proceed as described in [Integration with External Identity Providers](#_Integration_with_External).
 
 1.  If **Multi-user**, **Active Directory**, **SSO: CAS**, **SSO: SAML**, or **SSO:OAuth2** mode is selected, in the **Configure database** area that appears, modify the database parameters as follows:
 
-| Parameter        | Description                                                                                                                               |
-|------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Database URL     | Enter the URL for the selected database.                                                                                                  |
-| Login / Password | Username and password specified for the database as defined in [Configuring External User Database](#configuring-external-user-database). |
+| Parameter         | Description                                                                                                                               |
+|-------------------|-------------------------------------------------------------------------------------------------------------------------------------------|
+| Database URL      | Enter the URL for the selected database.                                                                                                  |
+| Login / Password  | Username and password specified for the database as defined in [Configuring External User Database](#configuring-external-user-database). |
 
 1.  Click **Finish** to complete setup.
 
@@ -781,7 +780,7 @@ Configure design and deployment repositories settings on the second step of Open
 
 ![](media/0c03bf32b2a043f41ab7ef85658f0c4a.png)
 
-*Figure 9: Setting up a JDBC connection using the installation wizard*
+*Figure: Setting up a JDBC connection using the installation wizard*
 
 #### Configuring OpenL Tablets WebStudio via JNDI Connection
 
@@ -848,7 +847,7 @@ Definition of the authentication data, that is, login and password, is not requi
 
 ![](media/ca12844a99b8378804060adafd3e18c5.png)
 
-*Figure 10: Setting up JNDI connection with installation wizard*
+*Figure: Setting up JNDI connection with installation wizard*
 
 #### Configuring OpenL Tablets WebStudio via Amazon Simple Storage Service
 
@@ -865,7 +864,6 @@ Configure design and deployment repositories settings on the second step of Open
 | Secret key            | Enter your Amazon AWS secret access key.                                                                                                                                                          |
 | Listener period (sec) | The time, in seconds, to wait for the Amazon server to respond.                                                                                                                                   |
 | Endpoint              | Leave empty for a standard AWS S3 connection. To connect to the non-standard AWS S3 alternative repository, specify the endpoint.                                                                 |
-|                       |                                                                                                                                                                                                   |
 
 #### Connecting to OpenL Tablets WebStudio via Proxy
 
@@ -873,7 +871,7 @@ The following diagram illustrates how to connect to OpenL Tablets WebStudio via 
 
 ![](media/3e3121758c148ab1c34f085210b39ee2.jpeg)
 
-*Figure 11: Connecting to OpenL Tablets WebStudio via proxy*
+*Figure: Connecting to OpenL Tablets WebStudio via proxy*
 
 ### Integration with External Identity Providers
 
@@ -896,7 +894,7 @@ OpenL Tablets WebStudio allows selecting where user permissions are managed in t
 
     ![](media/d00e1e24ed69010d2edabcfa8b742a4b.png)
 
-*Figure 12: Configuring initial users*
+*Figure: Configuring initial users*
 
 #### Configuring Authentication via Active Directory
 
@@ -907,13 +905,13 @@ This section explains how to set up authentication via Active Directory. Proceed
 
 *![](media/b0af66e4a4c7fd05a595fbaed7d3da7c.png)*
 
-*Figure 13: Configuring authentication via Active Directory*
+*Figure: Configuring authentication via Active Directory*
 
 #### Configuring Single Sign On via CAS
 
-This section explains how to set up authentication via CAS. Proceed as follows:
+This section explains how to set up authentication via CAS.
 
-1.  Define the following parameters:
+Define the following parameters:
 
 | Parameter                      | Description                                                                                         |
 |--------------------------------|-----------------------------------------------------------------------------------------------------|
@@ -929,7 +927,7 @@ This section explains how to set up authentication via CAS. Proceed as follows:
 
 *![](media/7f89597173892c2fccf1676b7d6db8de.png)*
 
-*Figure 14: Configuring CAS*
+*Figure: Configuring CAS*
 
 #### Configuring Single Sign On via SAML Server
 
@@ -940,37 +938,25 @@ This section describes single sign on configuration via the SAML server and incl
 
 ##### Configuring SAML via the Installation Wizard
 
-This section explains how to set up authentication via the SAML server using the installation wizard. Define the following parameters:
+This section explains how to set up authentication via the SAML server using the installation wizard.
 
-1.  
+Define the following parameters:
 
-| Parameter                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                          |
-|-----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Entity ID**                           | Entity identifier. Alternatively, its value can be set for the security.saml.entity-id property, in the webstudio.properties file.  An administrator must add the same entity ID to the clients list on the server which serves as an identity provider instance before setting it up in OpenL Tablets WebStudio. Adding the Entity ID parameter allows using several OpenL Tablets WebStudio instances on the same server with one Keycloak server. |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **SAML server metadata URL**            | URL of the metadata XML file of the Identity Provider.                                                                                                                                                                                                                                                                                                                                                                                               |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **SAML remote server X509 certificate** | PEM Base-64 encoded string, which contains a public key for SAML IDP Server. The begin and end tags are not required.                                                                                                                                                                                                                                                                                                                                |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-| **Attribute for Username**              | SAML attribute for a username. Keep it blank if SAML server does not return this attribute, or if default algorithm for username retrieval must be used.                                                                                                                                                                                                                                                                                             |
-| **Attribute for First Name**            | SAML attribute for the first name. Keep it blank if SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                      |
-| **Attribute for Second Name**           | SAML attribute for second name. Keep it blank if SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                         |
-| **Attribute for Display Name**          | SAML attribute for the display name. Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                |
-| **Attribute for Email**                 | SAML attribute for the email. Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                       |
-| **Attribute for Groups**                | SAML attribute for groups. Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                          |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
-|                                         |                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| Parameter                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+|-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Entity ID**                           | Entity identifier. Alternatively, its value can be set for the security.saml.entity-id property, in the webstudio.properties file. An administrator must add the same entity ID to the clients list on the server which serves as an identity provider instance before setting it up in OpenL Tablets WebStudio. Adding the Entity ID parameter allows using several OpenL Tablets WebStudio instances on the same server with one Keycloak server. |
+| **SAML server metadata URL**            | URL of the metadata XML file of the Identity Provider.                                                                                                                                                                                                                                                                                                                                                                                              |
+| **SAML remote server X509 certificate** | PEM Base-64 encoded string, which contains a public key for SAML IDP Server. The begin and end tags are not required.                                                                                                                                                                                                                                                                                                                               |
+| **Attribute for Username**              | SAML attribute for a username. Keep it blank if SAML server does not return this attribute, or if default algorithm for username retrieval must be used.                                                                                                                                                                                                                                                                                            |
+| **Attribute for First Name**            | SAML attribute for the first name. Keep it blank if SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                     |
+| **Attribute for Second Name**           | SAML attribute for second name. Keep it blank if SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                        |
+| **Attribute for Display Name**          | SAML attribute for the display name. Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                               |
+| **Attribute for Email**                 | SAML attribute for the email. Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                      |
+| **Attribute for Groups**                | SAML attribute for groups. Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                         |
 
 ![](media/e1bc1d72cfd7f7e2cf44ad34b7279a77.png)
 
-*Figure 15: Configuring SAML*
+*Figure: Configuring SAML*
 
 ##### Configuring SAML on Azure Kubernetes
 
@@ -978,11 +964,11 @@ SAML configuration on Azure Kubernetes includes the following steps:
 
 -   If the OpenL Tablets WebStudio Docker image is deployed on Azure Kubernetes, set the parameters on the Azure Basic SAML configuration as follows:
 
-| Parameter              | Description                                                                                                                                                     |
-|------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Identifier (Entity ID) | Audience of the SAML response for IDP-initiated SSO. Example: https://example.com/ saml2/service-provider-metadata/webstudio                                    |
-| Reply URL              | Destination in the SAML response for IDP-initiated SSO. Example: [https://example.com/ login/saml2/sso/webstudio](https://example.com/openl/webstudio/saml/SSO) |
-| Logout URL             | Called URL for the logout operation. Example: [https://example.com/ logout/saml2/slo](https://example.com/openl/webstudio/saml/SingleLogout)                    |
+| Parameter              | Description                                                                                                                                                      |
+|------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Identifier (Entity ID) | Audience of the SAML response for IDP-initiated SSO. Example: https://example.com/ saml2/service-provider-metadata/webstudio                                     |
+| Reply URL              | Destination in the SAML response for IDP-initiated SSO. Example: [https://example.com/ login/saml2/sso/webstudio](https://example.com/openl/webstudio/saml/SSO)  |
+| Logout URL             | Called URL for the logout operation. Example: [https://example.com/ logout/saml2/slo](https://example.com/openl/webstudio/saml/SingleLogout)                     |
 
 URLs must be accessible by Azure.
 
@@ -994,27 +980,36 @@ Username, first name, last name, group, and other attributes can also be retriev
 
 OpenL Tablets WebStudio stores information about users and their groups in the database, so there must be a remote database server when OpenL Tablets WebStudio is used in Kubernetes.
 
-In Kubernetes, application configuration is described in the configuration map and installer must not be used. For an example of the configuration, see [Appendix B: OpenL Tablets WebStudio Image Configuration for SAML](#appendix-b-openl-tablets-webstudio-image-configuration-for-saml).
+In Kubernetes, application configuration is described in the configuration map and installer must not be used. For an example of the configuration, see [Appendix B: OpenL Tablets WebStudio Image Configuration for SAML Under Kubernetes](#appendix-b-openl-tablets-webstudio-image-configuration-for-saml-under-kubernetes).
 
 #### Configuring Single Sign On via OAuth2
 
-| This section explains how to set up authentication via the OAuth2 server using the installation wizard. Define the following parameters:OAuth2 configuration parameters |                                                                                                                                                                                                                                  |
-|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Parameter                                                                                                                                                               | Description                                                                                                                                                                                                                      |
-| **Client ID**                                                                                                                                                           | Parameter required for an identity provider to identify OpenL Tablets WebStudio as a separate service provider. For Keycloak, the value must exactly match the client ID. In Okta, it must match the service provider entity ID. |
-| **Issuer URI**                                                                                                                                                          | OAuth2 authorization server URL. It is used for binding with the server to get additional settings for autoconfiguration.                                                                                                        |
-| **Client Secret**                                                                                                                                                       | Client secret. It is used by the OAuth client to authenticate to the authorization server.                                                                                                                                       |
-| **Scope**                                                                                                                                                               | Scope requested by the client during the authorization request flow, such as openid, email, or profile. https://oauth.net/2/scope/                                                                                               |
-| **Attribute for Username**                                                                                                                                              | OAuth2 attribute for a username. Keep it blank if OAuth2 server does not return this attribute, or if default algorithm for username retrieval must be used.                                                                     |
-| **Attribute for First Name**                                                                                                                                            | OAuth2 attribute for the first name. Keep it blank if OAuth2 server does not return this attribute.                                                                                                                              |
-| **Attribute for Second Name**                                                                                                                                           | OAuth2 attribute for second name. Keep it blank if OAuth2 server does not return this attribute.                                                                                                                                 |
-| **Attribute for Display Name**                                                                                                                                          | OAuth2 attribute for the display name. Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                        |
-| **Attribute for Email**                                                                                                                                                 | OAuth2 attribute for the email. Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                               |
-| **Attribute for Groups**                                                                                                                                                | SA OAuth2 ML attribute for groups. Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                            |
+This section explains how to set up authentication via the OAuth2 server using the installation wizard. Define the following parameters:
 
-![](media/4acfed42473d828f0d13d2f9be6c3a23.png)
+| Parameter                       | Description                                                                                                                                                                                                                       |
+|---------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Client ID**                   | Parameter required for an identity provider to identify OpenL Tablets WebStudio as a separate service provider.  For Keycloak, the value must exactly match the client ID. In Okta, it must match the service provider entity ID. |
+| **Issuer URI**                  | OAuth2 authorization server URL. It is used for binding with the server to get additional settings for autoconfiguration.                                                                                                         |
+| **Client Secret**               | Client secret. It is used by the OAuth client to authenticate to the authorization server.                                                                                                                                        |
+| **Scope**                       | Scope requested by the client during the authorization request flow, such as openid, email, or profile. https://oauth.net/2/scope/                                                                                                |
+| **Attribute for Username**      | OAuth2 attribute for a username. Keep it blank if OAuth2 server does not return this attribute, or if default algorithm for username retrieval must be used.                                                                      |
+| **Attribute for First Name**    | OAuth2 attribute for the first name. Keep it blank if OAuth2 server does not return this attribute.                                                                                                                               |
+| **Attribute for Second Name**   | OAuth2 attribute for second name. Keep it blank if OAuth2 server does not return this attribute.                                                                                                                                  |
+| **Attribute for Display Name**  | OAuth2 attribute for the display name. Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                         |
+| **Attribute for Email**         | OAuth2 attribute for the email. Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                                |
+| **Attribute for Groups**        | SA OAuth2 ML attribute for groups. Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                             |
 
-*Figure 16: Configuring single sign on via OAuth2*
+![](media/9cdb3316b12b230a6ad1f8cc0c38fc06.jpeg)
+
+*Figure: Configuring single sign on via OAuth2*
+
+An example of how to configure single sign on via OAuth2 using properties is as follows:
+
+```
+security.oauth2.client-id=a57bd7bd-2c22-4ef3-xxxx-xxxxxxxxxxx
+security.oauth2.issuer-uri=https://login.microsoftonline.com/bebd0062-openid-connect/v2.0
+security.oauth2.client-secret=xzB8Q~XxxXx-Secret-key-XxxXxxXxXxxx
+```
 
 ### OpenL Tablets WebStudio Customization
 
@@ -1186,6 +1181,8 @@ This section describes how to configure settings to connect to a database for st
 -   [Configuring OpenL Tablets Rule Services via JDBC Connection](#configuring-openl-tablets-rule-services-via-jdbc-connection)
 -   Configuring OpenL Tablets Rule Services via JNDI Connection
 -   [Configuring OpenL Tablets Rule Services via AWS S3 Connection](#configuring-openl-tablets-rule-services-via-aws-s3-connection)
+-   [Configuring OpenL Tablets Rule Services via GIT Connection](#configuring-openl-tablets-rule-services-via-git-connection)
+-   [Configuring OpenL Tablets Rule Services via Azure Blob Connection](#configuring-openl-tablets-rule-services-via-azure-blob-connection)
 
 Before configuration, add the appropriate driver library for a database in OpenL Tablets Rule Services to `\WEB-INF\lib\.`Alternatively, locate required libraries directly in `\<TOMCAT_HOME>\lib` with other Tomcat libraries. Install the database, defining a login and password and creating a new schema or service.
 
@@ -1344,7 +1341,7 @@ To set up a JNDI connection settings for OpenL Tablets WebStudio, proceed as fol
 
                             ![](media/b126142f46ae04166e7bb40b25a718a3.png)
 
-*Figure 27: Configuring a JNDI connection*
+*Figure: Configuring a JNDI connection*
 
 1.  In the **Create Datasource** window, select a data source and click **Next.**
     1.  Enter the data source name and JNDI name and click **Next.**
@@ -1352,7 +1349,7 @@ To set up a JNDI connection settings for OpenL Tablets WebStudio, proceed as fol
 
             ![](media/8e8e680140b9e8160fba58d2222e2047.png)
 
-*Figure 28: JDBC driver collection*
+*Figure: JDBC driver collection*
 
 1.  Select a JDBC driver and click **Next.**
     1.  Specify database connection settings and click **Next.**
@@ -1378,15 +1375,14 @@ This section describes how to set up OpenL Tablets WebStudio and OpenL Tablets R
 After integration any changes can be made in user’s rule in OpenL Tablets WebStudio, and then the project must be saved and redeployed. These changes immediately affect the rule represented as web service. During development, rules are stored in the file system of the development server. When development is finished, rules can be deployed to the production server as follows:
 
 1.  OpenL Tablets WebStudio sends the rules project to the database repository, using the JDBC driver for connection, in case of integration via database repository.
--   
-1.  The rules are saved on the production server.
-2.  OpenL Tablets Rule Services detects a new version of the deployed rules and starts using it.
+2.  The rules are saved on the production server.
+3.  OpenL Tablets Rule Services detects a new version of the deployed rules and starts using it.
 
 The following diagram illustrates the OpenL Tablets WebStudio and OpenL Tablets Rule Services integration:
 
 ![](media/7d47ea73c919e3bfe300c8906cd7f750.png)
 
-*Figure 29: OpenL Tablets WebStudio and OpenL Tablets Rule Services deployment*
+*Figure: OpenL Tablets WebStudio and OpenL Tablets Rule Services deployment*
 
 ### Integrating OpenL Tablets WebStudio and OpenL Tablets Rule Services via Database Repository
 
@@ -1442,7 +1438,7 @@ This section provides the most common questions and answers related to the OpenL
 |-------|----------------------------------------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | **1** | How can I check if Java is installed on my PC?                                                                                   | Proceed as follows: Open **Start \> Control Panel.** Perform either of the following: For Windows XP, double click **Add or Remove Programs**. For Windows 7/Vista, click **Programs \> Programs and Features**. Look through the list for **Java(TM)…** or **Java(TM) Update…** items. If any is present, Java is installed on your PC. |
 | **2** | During Java installation, the page for Java registration appears. Do I have to register Java?                                    | No, it is optional. You can close the registration page.                                                                                                                                                                                                                                                                                 |
-| 3     | How can I check which version of Java is installed on my PC?                                                                     | Open the [**Verify Java Version**](http://java.com/en/download/installed.jsp) page and click the **Verify Java Version** button. In a few seconds a new page appears where you will find the message like the following one: **Your Java version: Version 6 Update 26**.                                                                 |
+| 3     | How can I check which version of Java is installed on my PC?                                                                     | Open the [**Verify Java Version**](http://java.com/en/download/installed.jsp) page and click the **Verify Java Version** button.  In a few seconds a new page appears where you will find the message like the following one: **Your Java version: Version 6 Update 26**.                                                                |
 | 4     | How can I see the error message in the Tomcat console that appears when I start Tomcat? The error screen disappears too quickly. | Proceed as follows: Click **Start \> Run**. Locate the `<TOMCAT_HOME>\bin` folder. Select `catalina.bat` and enter *run* in the command line.                                                                                                                                                                                            |
 
 ## Appendix A: Official Docker Images for OpenL Tablets
@@ -1455,13 +1451,78 @@ OpenL Tablets supports Docker containers. The following table provides links to 
 | OpenL Tablets WebStudio     | <https://hub.docker.com/r/openltablets/webstudio/> |
 | OpenL Tablets demo          | <https://hub.docker.com/r/openltablets/demo/>      |
 
-## Appendix B: OpenL Tablets WebStudio Image Configuration for SAML
+## Appendix B: OpenL Tablets WebStudio Image Configuration for SAML Under Kubernetes
 
-\*\*\*Vladislav Pikus to provide, then contact Yury\*\*\*
-
-![](media/841358c93a75269be4ea8f6b0b6e89ed.png)
-
-*Figure 30: OpenL Tablets WebStudio Kubernetes configuration map example*
+```
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  name: webstudio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: webstudio
+  serviceName: webstudio
+  template:
+    metadata:
+      labels:
+        app: webstudio
+    spec:
+      containers:
+        - name: webstudio
+          image: openltablets/webstudio:latest
+          resources:
+            limits:
+              memory: "32768Mi"
+            requests:
+              memory: "1024Mi"
+          ports:
+            - containerPort: 8080
+          readinessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 30
+            periodSeconds: 60
+          livenessProbe:
+            tcpSocket:
+              port: 8080
+            initialDelaySeconds: 60
+            periodSeconds: 120
+          env:
+            - name: WEBSTUDIO_CONFIGURED
+              value: "true"
+            - name: DB_URL
+              value: "jdbc:postgresql://dbserver:5432/studio_db"
+            - name: DB_USER
+              value: "pgadmin@studio"
+            - name: DB_PASSWORD
+              value: "Pa$$w0rd"
+            - name: USER_MODE
+              value: "saml"
+            - name: SECURITY_SAML_ENTITY-ID
+              value: "webstudio"
+            - name: SECURITY_SAML_SAML-SERVER-METADATA-URL
+              value: "https://saml-idp-server/path/to/metadata"
+            - name: SECURITY_ADMINISTRATORS
+              value: "mylogin@example.com"
+            - name: SECURITY_SAML_SERVER-CERTIFICATE
+              value: "BASE64 encoded public key (optional)"
+            - name: SECURITY_SAML_ATTRIBUTE_FIRST-NAME
+              value: "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/givenname"
+            - name: SECURITY_SAML_ATTRIBUTE_LAST-NAME
+              value: "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/surname"
+            - name: SECURITY_SAML_ATTRIBUTE_DISPLAY-NAME
+              value: "http://schemas.microsoft.com/identity/claims/displayname"
+            - name: SECURITY_SAML_ATTRIBUTE_EMAIL
+              value: "http://schemas.xmlsoap.org/ws/2005/05/identity/claims/emailaddress"
+            - name: SECURITY_SAML_ATTRIBUTE_GROUPS
+              value: "http://schemas.microsoft.com/ws/2008/06/identity/claims/role"
+            - name: USER_MODE
+              value: "saml"
+      imagePullSecrets:
+        - name: regcreds
+```
 
 ## Appendix C: CORS Filter Support Enablement in OpenL Tablets WebStudio
 
