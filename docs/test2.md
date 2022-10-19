@@ -307,15 +307,13 @@ Proceed as follows:
 	The Apache Tomcat Properties dialog appears.
 
 1.  Click the **Java** tab and in the **Java Options** text box, add the following lines:
-
-```
--Xms512m
--Xmx2000m
--XX: +UseConcMarkSweepGC
--XX:PermSize=128m
--XX:MaxPermSize=512m
-
-```
+	```
+	-Xms512m
+	-Xmx2000m
+	-XX: +UseConcMarkSweepGC
+	-XX:PermSize=128m
+	-XX:MaxPermSize=512m
+	```
 
 	Note that every option must be manually entered in a separate row.
 
