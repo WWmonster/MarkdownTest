@@ -794,44 +794,44 @@ Resource settings must be configured before deploying the application. Proceed a
 
 1.  Open the `\conf\context.xml` file in Apache Tomcat and add the `Resource` tag as described in the following examples.
 
-For the Oracle database, an example is as follows:
+	For the Oracle database, an example is as follows:
 
-```
-<Resource name=”jdbc/oracleJNDI” auth=”Container”
-            type=”javax.sql.DataSource” username=”user” password=”password”
-            driverClassName=”oracle.jdbc.OracleDriver” 
-            url=”jdbc:oracle:thin:@localhost:1521:orcl”
-            maxActive=”8”    
-            /> 
-```
+	```
+	<Resource name=”jdbc/oracleJNDI” auth=”Container”
+		    type=”javax.sql.DataSource” username=”user” password=”password”
+		    driverClassName=”oracle.jdbc.OracleDriver” 
+		    url=”jdbc:oracle:thin:@localhost:1521:orcl”
+		    maxActive=”8”    
+		    /> 
+	```
 
-`For the MySQL database, an example is as follows:`
+	`For the MySQL database, an example is as follows:`
 
-```
-<Resource name=”jdbc/mysqlJNDI” auth=”Container” type=”javax.sql.DataSource”
-               maxActive=”100” maxIdle=”30” maxWait=”10000”
-               username=”javauser” password=”javadude” driverClassName=”com.mysql.jdbc.Driver”
-               url=”jdbc:mysql://localhost:3306/javatest”
-               />
-```
+	```
+	<Resource name=”jdbc/mysqlJNDI” auth=”Container” type=”javax.sql.DataSource”
+		       maxActive=”100” maxIdle=”30” maxWait=”10000”
+		       username=”javauser” password=”javadude” driverClassName=”com.mysql.jdbc.Driver”
+		       url=”jdbc:mysql://localhost:3306/javatest”
+		       />
+	```
 
-`For the MS SQL database, an example is as follows:`
+	`For the MS SQL database, an example is as follows:`
 
-```
-<Resource name=”jdbc/mssqlJNDI” auth=”Container”
-            type=”javax.sql.DataSource” username=”wally” password=”wally”
-            driverClassName=”com.microsoft.sqlserver.jdbc.SQLServerDriver” 
-            url=”jdbc:sqlserver://localhost;DatabaseName=mytest;SelectMethod=cursor;”
-            maxActive=”8” 
-            />
-For the PostrgeSQL database, an example is as follows:
-<Resource name=”jdbc/postgres” auth=”Container”
-            type=”javax.sql.DataSource” username=”postgres” password=”Password1”
-            driverClassName=”org.postgresql.Driver” 
-            url=”jdbc:postgresql://localhost:5432/postgres”
-            maxActive=”8” 
-            />
-```
+	```
+	<Resource name=”jdbc/mssqlJNDI” auth=”Container”
+		    type=”javax.sql.DataSource” username=”wally” password=”wally”
+		    driverClassName=”com.microsoft.sqlserver.jdbc.SQLServerDriver” 
+		    url=”jdbc:sqlserver://localhost;DatabaseName=mytest;SelectMethod=cursor;”
+		    maxActive=”8” 
+		    />
+	For the PostrgeSQL database, an example is as follows:
+	<Resource name=”jdbc/postgres” auth=”Container”
+		    type=”javax.sql.DataSource” username=”postgres” password=”Password1”
+		    driverClassName=”org.postgresql.Driver” 
+		    url=”jdbc:postgresql://localhost:5432/postgres”
+		    maxActive=”8” 
+		    />
+	```
 
 1.  Save the `context.xml` file.
 
@@ -842,11 +842,11 @@ Configure design and deployment repositories settings on the second step of Open
 1.  Select **JNDI** as the type of the connection database.
 2.  Enter a URL in the `java:comp/env/<resource name>` format.
 
-Definition of the authentication data, that is, login and password, is not required in the installation wizard because this information is set in `context.xml` file already.
+	Definition of the authentication data, that is, login and password, is not required in the installation wizard because this information is set in `context.xml` file already.
 
-![](media/ca12844a99b8378804060adafd3e18c5.png)
+	![](media/ca12844a99b8378804060adafd3e18c5.png)
 
-*Figure: Setting up JNDI connection with installation wizard*
+	*Figure: Setting up JNDI connection with installation wizard*
 
 #### Configuring OpenL Tablets WebStudio via Amazon Simple Storage Service
 
@@ -855,14 +855,14 @@ Configure design and deployment repositories settings on the second step of Open
 1.  Select **AWS S3** as the type of connection.
 2.  Specify the following information:
 
-| Parameter             | Description                                                                                                                                                                                       |
-|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Bucket name           | Enter the name of the bucket in which your data resides.                                                                                                                                          |
-| Region name           | Select the name of the AWS region in which your bucket resides. For non-AWS S3 repositories, any value can be specified. This value cannot be omitted as it is required by the API specification. |
-| Access key            | Enter your Amazon AWS access key.                                                                                                                                                                 |
-| Secret key            | Enter your Amazon AWS secret access key.                                                                                                                                                          |
-| Listener period (sec) | The time, in seconds, to wait for the Amazon server to respond.                                                                                                                                   |
-| Endpoint              | Leave empty for a standard AWS S3 connection. To connect to the non-standard AWS S3 alternative repository, specify the endpoint.                                                                 |
+	| Parameter             | Description                                                                                                                                                                                       |
+	|-----------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+	| Bucket name           | Enter the name of the bucket in which your data resides.                                                                                                                                          |
+	| Region name           | Select the name of the AWS region in which your bucket resides. For non-AWS S3 repositories, any value can be specified. This value cannot be omitted as it is required by the API specification. |
+	| Access key            | Enter your Amazon AWS access key.                                                                                                                                                                 |
+	| Secret key            | Enter your Amazon AWS secret access key.                                                                                                                                                          |
+	| Listener period (sec) | The time, in seconds, to wait for the Amazon server to respond.                                                                                                                                   |
+	| Endpoint              | Leave empty for a standard AWS S3 connection. To connect to the non-standard AWS S3 alternative repository, specify the endpoint.                                                                 |
 
 #### Connecting to OpenL Tablets WebStudio via Proxy
 
@@ -893,7 +893,7 @@ OpenL Tablets WebStudio allows selecting where user permissions are managed in t
 
     ![](media/d00e1e24ed69010d2edabcfa8b742a4b.png)
 
-*Figure: Configuring initial users*
+	*Figure: Configuring initial users*
 
 #### Configuring Authentication via Active Directory
 
@@ -902,9 +902,9 @@ This section explains how to set up authentication via Active Directory. Proceed
 1.  Specify Active Directory domain, URL, user filter, and group filter.
 2.  To verify connection to Active Directory, enter credentials of the existing Active Directory user and click **Check Connection**.
 
-*![](media/b0af66e4a4c7fd05a595fbaed7d3da7c.png)*
+	*![](media/b0af66e4a4c7fd05a595fbaed7d3da7c.png)*
 
-*Figure: Configuring authentication via Active Directory*
+	*Figure: Configuring authentication via Active Directory*
 
 #### Configuring Single Sign On via CAS
 
@@ -943,7 +943,9 @@ Define the following parameters:
 
 | Parameter                               | Description                                                                                                                                                                                                                                                                                                                                                                                                                                         |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Entity ID**                           | Entity identifier. Alternatively, its value can be set for the security.saml.entity-id property, in the webstudio.properties file. An administrator must add the same entity ID to the clients list on the server which serves as an identity provider instance before setting it up in OpenL Tablets WebStudio. Adding the Entity ID parameter allows using several OpenL Tablets WebStudio instances on the same server with one Keycloak server. |
+| **Entity ID**                           | Entity identifier. Alternatively, its value can be set for the security.saml.entity-id property, in the webstudio.properties file.  
+An administrator must add the same entity ID to the clients list on the server which serves as an identity provider instance before setting it up in OpenL Tablets WebStudio.  
+Adding the Entity ID parameter allows using several OpenL Tablets WebStudio instances on the same server with one Keycloak server. |
 | **SAML server metadata URL**            | URL of the metadata XML file of the Identity Provider.                                                                                                                                                                                                                                                                                                                                                                                              |
 | **SAML remote server X509 certificate** | PEM Base-64 encoded string, which contains a public key for SAML IDP Server. The begin and end tags are not required.                                                                                                                                                                                                                                                                                                                               |
 | **Attribute for Username**              | SAML attribute for a username. Keep it blank if SAML server does not return this attribute, or if default algorithm for username retrieval must be used.                                                                                                                                                                                                                                                                                            |
