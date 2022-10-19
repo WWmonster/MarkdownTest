@@ -346,31 +346,31 @@ Proceed as follows:
 
 1.  Open a terminal window and enter the following:
 
-```
-sudo apt-get install tomcat7
-```
+	```
+	sudo apt-get install tomcat7
+	```
 
 1.  Start Tomcat with the next command:
 
-```
-sudo /etc/init.d/tomcat7 start
-```
+	```
+	sudo /etc/init.d/tomcat7 start
+	```
 
-All necessary folders must be located in `/var/lib/tomcat7`.
+	All necessary folders must be located in `/var/lib/tomcat7`.
 
 1.  To ensure that Tomcat works properly, open the browser and enter *http://localhost:8080*.
 
-If all is correct, Apache Tomcat displays the welcome page with a message resembling the following:
+	If all is correct, Apache Tomcat displays the welcome page with a message resembling the following:
 
-**If you're seeing this, you've successfully installed Tomcat. Congratulations!**
+	**If you're seeing this, you've successfully installed Tomcat. Congratulations!**
 
-If the 404 error appears, try to restart Tomcat as follows:
+	If the 404 error appears, try to restart Tomcat as follows:
 
-sudo /etc/init.d/tomcat7 restart
+	sudo /etc/init.d/tomcat7 restart
 
-Alternatively, stop Tomcat by entering the following command in command line and then start it as described previously:
+	Alternatively, stop Tomcat by entering the following command in command line and then start it as described previously:
 
-sudo /etc/init.d/tomcat7 stop
+	sudo /etc/init.d/tomcat7 stop
 
 ##### Installing Apache Tomcat from ZIP File
 
