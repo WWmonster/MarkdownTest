@@ -224,6 +224,7 @@ To install JDK, perform the following steps:
 	    `export PATH=$PATH:$JAVA_HOME/bin`
 	
 	12. To save, press **CTRL+O** and then press **CTRL+X** to exit.
+	
 13. For Unix/Linux environments, assuming the target directory is `/usr/lib/jvm/jdk1.8.0_231`, to set up the environment variable `JAVA_HOME` for all users, proceed as follows:
 	14. Log in as root and open the `nano /etc/profile` profile.
 	15. Add the following line:
