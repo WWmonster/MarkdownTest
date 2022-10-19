@@ -283,28 +283,28 @@ Proceed as follows:
 1.  Navigate to the Apache Tomcat site at <http://tomcat.apache.org/index.html> and in the left-hand **Download** menu, click the latest available Tomcat version.
 2.  Locate the **Binary Distributions** area and in the **Core** list, click the [32-bit/64-bit Windows Service Installer](http://www.sai.msu.su/apache/tomcat/tomcat-7/v7.0.29/bin/apache-tomcat-7.0.29.exe) link.
 
-Save the apache-tomcat exe file in a temporary folder.
+	Save the apache-tomcat exe file in a temporary folder.
 
 1.  Run the exe file and follow the instructions of the installation wizard.
 2.  Click **Next**.
 3.  In the **License Agreement** window, click **I Agree**.
 4.  In the **Choose Components** dialog, leave the default **Normal** type of installation.
 
-Experienced Tomcat users can select another installation type in the drop-down list.
+	Experienced Tomcat users can select another installation type in the drop-down list.
 
 1.  In the **Configuration** dialog, proceed with default values.
 2.  In the next window, review the folder where Tomcat will be installed, the **Destination Folder**.
 
-This folder is referred to as `<TOMCAT_HOME> `further in this document.
+	This folder is referred to as `<TOMCAT_HOME> `further in this document.
 
 1.  Click **Install** to start the installation.
 2.  Click **Finish** to complete.
 
-As a result, Apache Tomcat is installed and started on the user’s computer. In the **Notification Area** located next to the clock, the ![](media/3cb496a7a506c9a316dd860933a62610.png) icon appears. Tomcat is managed by using this icon or from the **Start** menu.
+	As a result, Apache Tomcat is installed and started on the user’s computer. In the **Notification Area** located next to the clock, the ![](media/3cb496a7a506c9a316dd860933a62610.png) icon appears. Tomcat is managed by using this icon or from the **Start** menu.
 
 1.  To configure JVM options for Tomcat, in the **Notification** area, right click the **Apache Tomcat** icon and select **Configure;** or click **Start \> All Programs \> Apache Tomcat 7.0 \> Configure Tomcat**.
 
-The Apache Tomcat Properties dialog appears.
+	The Apache Tomcat Properties dialog appears.
 
 1.  Click the **Java** tab and in the **Java Options** text box, add the following lines:
 
@@ -316,16 +316,16 @@ The Apache Tomcat Properties dialog appears.
 -XX:MaxPermSize=512m
 ```
 
-Note that every option must be manually entered in a separate row.
+	Note that every option must be manually entered in a separate row.
 
 1.  Click **Apply** and then click **OK**.
 2.  To restart Tomcat, in **Notification Area**, right click the Tomcat icon and select **Stop service**.
 
-The Tomcat icon changes to ![](media/92d4ddf0cb30a775c8a9386e39167b21.png).
+	The Tomcat icon changes to ![](media/92d4ddf0cb30a775c8a9386e39167b21.png).
 
 1.  Select **Start Service**.
 
-Alternatively, Tomcat can be restarted from the **General** tab in the **Apache Tomcat Properties** window which appears after selecting **Start \> All Programs \> Apache Tomcat 7.0 \> Configure Tomcat**.
+	Alternatively, Tomcat can be restarted from the **General** tab in the **Apache Tomcat Properties** window which appears after selecting **Start \> All Programs \> Apache Tomcat 7.0 \> Configure Tomcat**.
 
 From this point, OpenL Tablets WebStudio can be run as described in [Deploying OpenL Tablets WebStudio](#deploying-openl-tablets-webstudio).
 
