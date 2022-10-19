@@ -213,6 +213,7 @@ To install JDK, perform the following steps:
 	5. In the **Variable** name field, enter *JAVA_HOME.*
 	6. In the **Variable** value field, enter the path to the directory where JDK is installed, for example, `C:\Java\jdk1.8.0_231`.
 	7.  Click **OK** to complete.
+
 8. For Unix/Linux environments, assuming the target directory is `/usr/lib/jvm/jdk1.8.0_231`, to set up the environment variable `JAVA_HOME` for a single user, proceed as follows:
 	9.  Log in to the account and open `.bash_profile:nano ~/.bash_profile`.
 	10. Add the following line
