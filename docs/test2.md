@@ -204,7 +204,7 @@ To install JDK, perform the following steps:
 
     For more information on the installation, see <http://www.oracle.com/technetwork/java/javase/index-137561.html>.
 
-1.  Install JDK according to the instructions.
+1.  Install JDK according to the instructions.  
 
  Now the environment variable `JAVA_HOME` must be set to the pathname of the directory where JDK is installed.
 
