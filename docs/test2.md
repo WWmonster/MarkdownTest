@@ -596,21 +596,21 @@ Before configuration, perform the following steps:
 	Right after applying changes in OpenL Tablets WebStudio, the updates are applied to the database. A user can log in and work under a newly created account in OpenL Tablets WebStudio.
 
 	!!! note
-	During installation, several tables are created in the database. If the same tables exist in the database from the previous usage, a conflict occurs. To avoid this situation, the following tables must be removed:
+		During installation, several tables are created in the database. If the same tables exist in the database from the previous usage, a conflict occurs. To avoid this situation, the following tables must be removed:
 
-	-   ACCESSCONTROLENTRY
-	-   GROUP2GROUP
-	-   OPENLUSER
-	-   schema_version
-	-   USER2GROUP
-	-   USERGROUP
-	-   HIBERNATE_SEQUENCE table that has `SEQUENCE_OWNER=OPENL`
-	-   OPENL_EXTERNAL_GROUPS
-	-   OPENL_TAG_TYPES
-	-   OPENL_TAGS
-	-   OPENL_PROJECTS
-	-   OPENL_PROJECT_TAGS
-	-   OPENL_TAG_TEMPLATES
+		-   ACCESSCONTROLENTRY
+		-   GROUP2GROUP
+		-   OPENLUSER
+		-   schema_version
+		-   USER2GROUP
+		-   USERGROUP
+		-   HIBERNATE_SEQUENCE table that has `SEQUENCE_OWNER=OPENL`
+		-   OPENL_EXTERNAL_GROUPS
+		-   OPENL_TAG_TYPES
+		-   OPENL_TAGS
+		-   OPENL_PROJECTS
+		-   OPENL_PROJECT_TAGS
+		-   OPENL_TAG_TEMPLATES
 
 #### Configuring MySQL Database as External User Storage
 
