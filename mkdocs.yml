@@ -9,7 +9,7 @@ nav:
         - Supported Platforms: platforms.md
         - Downloads: downloads.md
         - Release Notes: releasenotes.md
-        - Documentation: documentation.md
+        - Documentation:
             - Installation Guide: installationguide.md
         - Test: 'test/test01.md'
 theme: readthedocs
