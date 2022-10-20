@@ -36,9 +36,9 @@ This section includes the following topics:
 | [Before You Begin](#_Before_You_Begin)                                                                                                                                                      | Lists system requirements for installing and using OpenL Tablets software.                                   |
 | [Install OpenL Tablets WebStudio<br/> under Apache Tomcat](#_Install_OpenL_Tablets)                                                                                                              | Explains how to install OpenL Tablets WebStudio under Apache Tomcat.                                         |
 | [Deploy OpenL Tablets Rule Services<br/> under Apache Tomcat](#deploy-openl-tablets-rule-services-under-apache-tomcat)                                                                           | Designed for rule developers who need to use business rules as separate web services.                        |
-| [Install OpenL Tablets WebStudio<br/> and OpenL Tablets Rule Services on JBoss Application Server](#install-openl-tablets-webstudio-and-openl-tablets-rule-services-on-jboss-application-server) | Explains how to install OpenL Tablets WebStudio and OpenL Tablets Rule Services on JBoss Application Server. |
+| [Install OpenL Tablets WebStudio and<br/>OpenL Tablets Rule Services on JBoss Application Server](#install-openl-tablets-webstudio-and-openl-tablets-rule-services-on-jboss-application-server) | Explains how to install OpenL Tablets WebStudio and OpenL Tablets Rule Services on JBoss Application Server. |
 | [OpenL Tablets WebStudio and OpenL Tablets Rule<br/> Services Integration](#openl-tablets-webstudio-and-rule-services-integration)                                                               | Explains how to set up OpenL Tablets WebStudio and OpenL Tablets Rule Services as an integrated environment. |
-| [Troubleshooting Notes](#_Troubleshooting_Notes) [Frequently Asked Questions](#frequently-asked-questions)                                                                                  | Provides useful information related to OpenL Tablets installation.                                           |
+| [Troubleshooting Notes](#_Troubleshooting_Notes) <br/>[Frequently Asked Questions](#frequently-asked-questions)                                                                                  | Provides useful information related to OpenL Tablets installation.                                           |
 
 ### Audience
 
@@ -89,13 +89,9 @@ The following table covers system requirements for installing and running OpenL 
 | Data Bases        | One of the following: MySQL 5.5+ MariaDB 10.2+ MS SQL Server 2008+ Oracle 11g + PostgreSQL 9.5+                                                                                                                                                                                                               |
 | Other software    | Java v8/11/12 x86/64  Apache Tomcat 7, 8.5, 9 WebSphere Application Server 8.5 JBoss EAP 7.1                                                                                                                                                                                                                  |
 
-| Hardware requirements |                                                                                                 |
-|-----------------------|-------------------------------------------------------------------------------------------------|
-|                       | RAM 4 GB minimum.  6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor. |
+| Hardware requirements | RAM 4 GB minimum.  6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor. |
 
-| User rights requirements |                                                                                                         |
-|--------------------------|---------------------------------------------------------------------------------------------------------|
-|                          | Administrative permissions are required to install the software under Microsoft Windows or UNIX system. |
+| User rights requirements | Administrative permissions are required to install the software under Microsoft Windows or UNIX system. |
 
 **Note:** It is highly recommended to avoid using spaces and special characters in paths.
 
