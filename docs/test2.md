@@ -85,8 +85,7 @@ The following table covers system requirements for installing and running OpenL 
 
 | Software          | Requirements description                                                                                                                                                                                                                                                                                      |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Operating systems | One of the following: <br/>• Microsoft Windows 7+ x86/64 <br/>• Ubuntu 12.x <br/>• Linux 3.x <br/>!!! Note
-	OpenL Tablets software can potentially run on any operating system that supports Java Virtual Machine, for example, Mac OS. <br/>This table lists operating systems on which the OpenL Tablets software is tested and supported. |
+| Operating systems | One of the following: <br/>• Microsoft Windows 7+ x86/64 <br/>• Ubuntu 12.x <br/>• Linux 3.x <br/>Note: OpenL Tablets software can potentially run on any operating system that supports Java Virtual Machine, for example, Mac OS. <br/>This table lists operating systems on which the OpenL Tablets software is tested and supported. |
 | Browsers          | One of the following: <br/>• Microsoft Internet Explorer 11.x <br/>• Firefox 60 ESR or later <br/>• Chrome 73+                                                                                                                                                                                                                     |
 | Data Bases        | One of the following: <br/>• MySQL 5.5+ <br/>• MariaDB 10.2+ <br/>• MS SQL Server 2008+ <br/>• Oracle 11g + <br/>• PostgreSQL 9.5+                                                                                                                                                                                                               |
 | Other software    | <br/>Java v8/11/12 x86/64  <br/>Apache Tomcat 7, 8.5, 9 <br/>WebSphere Application Server 8.5 <br/>JBoss EAP 7.1                                                                                                                                                                                                                  |
@@ -199,7 +198,8 @@ To install JDK, perform the following steps:
 	
     Further in the document, this catalog is referred to as `<JAVA_HOME>`.
 
-    **Note:** It is highly recommended to avoid installing Java in the default Program Files directory because it can cause problems due to space characters in the path to the folder.
+    !!! note
+    	It is highly recommended to avoid installing Java in the default Program Files directory because it can cause problems due to space characters in the path to the folder.
 
     For more information on the installation, see <http://www.oracle.com/technetwork/java/javase/index-137561.html>.
 
