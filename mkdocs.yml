@@ -9,6 +9,7 @@ nav:
     - Downloads: downloads.md
     - Release Notes: releasenotes.md
     - Documentation:
+        - Available docs: documentation.md
         - Installation Guide: installationguide.md
     - Test: 'test/test01.md'
 theme: readthedocs
