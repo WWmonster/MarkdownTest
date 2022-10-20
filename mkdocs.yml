@@ -11,7 +11,7 @@ nav:
         - Release Notes: releasenotes.md
         - Documentation: documentation.md
         - Test: 'test/test01.md'
-        - Test2: test2.md
+        - Installation Guide: installationguide.md
 theme: readthedocs
 
 markdown_extensions:
