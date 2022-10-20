@@ -69,6 +69,7 @@ And here is another pgf
 Now test admonitions
 
 !!! note
+    Need to indent to make the note content.
     You should note that the title will be automatically capitalized.
     Can it have another line
     ### Can it contain formatting?
