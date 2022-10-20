@@ -151,7 +151,7 @@ This option is not available if OpenL Tablets WebStudio is installed using the i
 
 To start OpenL Tablets WebStudio in the cluster mode, the `openl.home.shared` or `OPENL_HOME_SHARED` property must be defined properly. In the cluster mode, the same file storage can be used for multiple OpenL Tablets WebStudio instances.
 
-<img src="../../img/media_InstallationGuide/a9b21678a299178dbf55c69e15dc64db.jpeg" width="500">
+<img src="../img/media_InstallationGuide/a9b21678a299178dbf55c69e15dc64db.jpeg" width="500">
 
 *Figure: Multiple OpenL Tablets WebStudio instances sharing the same drive*
 
