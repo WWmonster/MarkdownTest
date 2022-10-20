@@ -5,7 +5,7 @@ Release 5.26
 ```
 
 ```
-OpenL Tablets Documentation is licensed under a Creative Commons Attribution 3.0 United States License.
+OpenL Tablets Documentation is licensed under a <br/>Creative Commons Attribution 3.0 United States License.
 ```
 
 ## Preface
@@ -62,13 +62,13 @@ The following styles and conventions are used in this guide:
 
 | Convention                 | Description                                                                                                                                                                                                                                                                                                                 |
 |----------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Bold**                   | Represents user interface items such as check boxes, command buttons, dialog boxes, drop-down list values, field names, menu commands, menus, option buttons, perspectives, tabs, tooltip labels, tree elements, views, and windows. Represents keys, such as F9 or CTRL+A. Represents a term the first time it is defined. |
+| **Bold**                   | Represents user interface items such as check boxes, command buttons, <br/>dialog boxes, drop-down list values, field names, menu commands, menus, option buttons, perspectives, <br/>tabs, tooltip labels, tree elements, views, and windows. <br/>Represents keys, such as F9 or CTRL+A. <br/>Represents a term the first time it is defined. |
 | `Courier`                  | Represents file and directory names, code, system messages, and command-line commands.                                                                                                                                                                                                                                      |
 | `Courier Bold`             | Represents emphasized text in code.                                                                                                                                                                                                                                                                                         |
 | **Select File \> Save As** | Represents a command to perform, such as opening the File menu and selecting Save As.                                                                                                                                                                                                                                       |
 | *Italic*                   | Represents any information to be entered in a field.  Represents documentation titles.                                                                                                                                                                                                                                      |
 | \< \>                      | Represents placeholder values to be substituted with user specific values.                                                                                                                                                                                                                                                  |
-| Hyperlink                  | Represents a hyperlink. Clicking a hyperlink displays the information topic or external source.                                                                                                                                                                                                                             |
+| Hyperlink                  | Represents a hyperlink. <br/>Clicking a hyperlink displays the information topic or external source.                                                                                                                                                                                                                             |
 | **[name of guide]**        | Reference to another guide that contains additional information on a specific feature.                                                                                                                                                                                                                                      |
 
 ## Before You Begin
@@ -84,14 +84,14 @@ The following table covers system requirements for installing and running OpenL 
 
 | Software          | Requirements description                                                                                                                                                                                                                                                                                      |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Operating systems | One of the following: Microsoft Windows 7+ x86/64 Ubuntu 12.x Linux 3.x <br/>**Note:** OpenL Tablets software can potentially run on any operating system that supports Java Virtual Machine, for example, Mac OS. <br/>This table lists operating systems on which the OpenL Tablets software is tested and supported. |
-| Browsers          | One of the following: Microsoft Internet Explorer 11.x Firefox 60 ESR or later Chrome 73+                                                                                                                                                                                                                     |
-| Data Bases        | One of the following: MySQL 5.5+ MariaDB 10.2+ MS SQL Server 2008+ Oracle 11g + PostgreSQL 9.5+                                                                                                                                                                                                               |
-| Other software    | Java v8/11/12 x86/64  Apache Tomcat 7, 8.5, 9 WebSphere Application Server 8.5 JBoss EAP 7.1                                                                                                                                                                                                                  |
+| Operating systems | One of the following: <br/>• Microsoft Windows 7+ x86/64 <br/>• Ubuntu 12.x <br/>• Linux 3.x <br/>**Note:** OpenL Tablets software can potentially run on any operating system that supports Java Virtual Machine, for example, Mac OS. <br/>This table lists operating systems on which the OpenL Tablets software is tested and supported. |
+| Browsers          | One of the following: <br/>• Microsoft Internet Explorer 11.x <br/>• Firefox 60 ESR or later <br/>• Chrome 73+                                                                                                                                                                                                                     |
+| Data Bases        | One of the following: <br/>• MySQL 5.5+ <br/>• MariaDB 10.2+ <br/>• MS SQL Server 2008+ <br/>• Oracle 11g + <br/>• PostgreSQL 9.5+                                                                                                                                                                                                               |
+| Other software    | <br/>Java v8/11/12 x86/64  <br/>Apache Tomcat 7, 8.5, 9 <br/>WebSphere Application Server 8.5 <br/>JBoss EAP 7.1                                                                                                                                                                                                                  |
 
-| Hardware requirements | RAM 4 GB minimum. 6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor. |
+**Hardware requirements:** RAM 4 GB minimum. 6 GB is recommended. <br/>1 GHz or faster 32-bit (x86) or 64-bit (x64) processor.
 
-| User rights requirements |Administrative permissions are required to install the software under Microsoft Windows or UNIX system. |
+**User rights requirements:** Administrative permissions are required to install the software <br/>under Microsoft Windows or UNIX system.
 
 **Note:** It is highly recommended to avoid using spaces and special characters in paths.
 
@@ -1434,7 +1434,7 @@ This section provides the most common questions and answers related to the OpenL
 | **1** | How can I check if Java is installed on my PC?                                                                                   | Proceed as follows: <br/>Open **Start \> Control Panel.** <br/>Perform either of the following: <br/>• For Windows XP, double click **Add or Remove Programs**. <br/>• For Windows 7/Vista, click **Programs \> Programs and Features**. <br/>Look through the list for **Java(TM)…** or **Java(TM) Update…** items. If any is present, Java is installed on your PC. |
 | **2** | During Java installation, the page for Java registration appears. Do I have to register Java?                                    | No, it is optional. You can close the registration page.                                                                                                                                                                                                                                                                                 |
 | 3     | How can I check which version of Java is installed on my PC?                                                                     | Open the [**Verify Java Version**](http://java.com/en/download/installed.jsp) page and click the **Verify Java Version** button.  <br/>In a few seconds a new page appears where you will find the message like the following one: **Your Java version: Version 6 Update 26**.                                                                |
-| 4     | How can I see the error message in the Tomcat console that appears when I start Tomcat? The error screen disappears too quickly. | Proceed as follows: <br/>Click **Start \> Run**. <br/>Locate the `<TOMCAT_HOME>\bin` folder. <br/>Select `catalina.bat` and enter *run* in the command line.                                                                                                                                                                                            |
+| 4     | How can I see the error message in the Tomcat <br/>console that appears when I start Tomcat? <br/>The error screen disappears too quickly. | Proceed as follows: <br/>Click **Start \> Run**. <br/>Locate the `<TOMCAT_HOME>\bin` folder. <br/>Select `catalina.bat` and enter *run* in the command line.                                                                                                                                                                                            |
 
 ## Appendix A: Official Docker Images for OpenL Tablets
 
@@ -1519,6 +1519,6 @@ spec:
         - name: regcreds
 ```
 
-## Appendix C: CORS Filter Support Enablement in OpenL Tablets WebStudio
+## Appendix C: CORS Filter Support Enablement in <br/>OpenL Tablets WebStudio
 
 **Cross-Origin Resource Sharing (CORS)** is a specification which is a standard mechanism that enables cross-origin requests. For more information on how to enable CORS filter support in OpenL Tablets WebStudio, see **[**[**OpenL Tablets Rule Services Usage and Customization Guide**](https://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20Rule%20Services%20Usage%20and%20Customization%20Guide.pdf)**]**, the CORS Filter Support section.
