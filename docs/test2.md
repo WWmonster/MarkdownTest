@@ -597,7 +597,6 @@ Before configuration, perform the following steps:
 
 	!!! note
 		During installation, several tables are created in the database. If the same tables exist in the database from the previous usage, a conflict occurs. To avoid this situation, the following tables must be removed:
-
 		-   ACCESSCONTROLENTRY
 		-   GROUP2GROUP
 		-   OPENLUSER
