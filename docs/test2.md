@@ -90,12 +90,11 @@ The following table covers system requirements for installing and running OpenL 
 | Data Bases        | One of the following: <br/>• MySQL 5.5+ <br/>• MariaDB 10.2+ <br/>• MS SQL Server 2008+ <br/>• Oracle 11g + <br/>• PostgreSQL 9.5+                                                                                                                                                                                                               |
 | Other software    | <br/>Java v8/11/12 x86/64  <br/>Apache Tomcat 7, 8.5, 9 <br/>WebSphere Application Server 8.5 <br/>JBoss EAP 7.1                                                                                                                                                                                                                  |
 
-**Hardware requirements:** RAM 4 GB minimum. 6 GB is recommended. <br/>1 GHz or faster 32-bit (x86) or 64-bit (x64) processor.
+**Hardware requirements:** RAM 4 GB minimum. 6 GB is recommended. 1 GHz or faster 32-bit (x86) or 64-bit (x64) processor.
 
-**User rights requirements:** Administrative permissions are required to install the software <br/>under Microsoft Windows or UNIX system.
+**User rights requirements:** Administrative permissions are required to install the software under Microsoft Windows or UNIX system.
 
-!!! note 
-It is highly recommended to avoid using spaces and special characters in paths.
+!!! note It is highly recommended to avoid using spaces and special characters in paths.
 
 ### Common Information about OpenL Tablets WebStudio Instances
 
