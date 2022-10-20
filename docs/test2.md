@@ -273,9 +273,11 @@ To install Apache Tomcat 7.0.x or later, proceed as follows:
 
 This section describes how to install Apache Tomcat using Windows Service Installer.
 
-**Note:** It is not recommended to select this type of installation if planning to edit rule tables in Excel files from OpenL Tablets WebStudio as described in **[**[**OpenL Tablets WebStudio User Guide**](https://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20WebStudio%20User%20Guide.pdf)**]**, the **Modifying Tables** section. This type of installation requires additional setup. To solve this issue, contact your OpenL Tablets administrator.
+!!! note
+	It is not recommended to select this type of installation if planning to edit rule tables in Excel files from OpenL Tablets WebStudio as described in **[**[**OpenL Tablets WebStudio User Guide**](https://openl-tablets.org/files/openl-tablets/latest/OpenL%20Tablets%20-%20WebStudio%20User%20Guide.pdf)**]**, the **Modifying Tables** section. This type of installation requires additional setup. To solve this issue, contact your OpenL Tablets administrator.
 
-**Note:** For OpenL Tablets administrator: to enable editing rule tables in Excel files from OpenL Tablets WebStudio, enable the **Allow** service to interact with desktop Tomcat service option using MMC or from the command line.
+!!! note
+	For OpenL Tablets administrator: to enable editing rule tables in Excel files from OpenL Tablets WebStudio, enable the **Allow** service to interact with desktop Tomcat service option using MMC or from the command line.
 
 Proceed as follows:
 
@@ -314,7 +316,8 @@ Proceed as follows:
 	-XX:MaxPermSize=512m
 	```
 
-	Note that every option must be manually entered in a separate row.
+	!!! note
+	Every option must be manually entered in a separate row.
 
 1.  Click **Apply** and then click **OK**.
 2.  To restart Tomcat, in **Notification Area**, right click the Tomcat icon and select **Stop service**.
@@ -339,7 +342,8 @@ This section describes how to install Apache Tomcat on the UNIX or Linux machine
 
 This section describes how to install Apache Tomcat from repository as a service on Ubuntu 12.x.
 
-**Note:** All commands must be entered into a terminal window using an account with `sudo` privileges.
+!!! note
+	All commands must be entered into a terminal window using an account with `sudo` privileges.
 
 Proceed as follows:
 
@@ -591,7 +595,8 @@ Before configuration, perform the following steps:
 
 	Right after applying changes in OpenL Tablets WebStudio, the updates are applied to the database. A user can log in and work under a newly created account in OpenL Tablets WebStudio.
 
-	**Note:** During installation, several tables are created in the database. If the same tables exist in the database from the previous usage, a conflict occurs. To avoid this situation, the following tables must be removed:
+	!!! note
+	During installation, several tables are created in the database. If the same tables exist in the database from the previous usage, a conflict occurs. To avoid this situation, the following tables must be removed:
 
 	-   ACCESSCONTROLENTRY
 	-   GROUP2GROUP
@@ -921,7 +926,8 @@ Define the following parameters:
 | **Attribute for Email**        | CAS attribute for the email. <br/>Keep it blank if the CAS server does not return this attribute.        |
 | **Attribute for Groups**       | CAS attribute for groups. <br/>Keep it blank if the CAS server does not return this attribute.           |
 
-**Note:** Contact CAS server administrator for attribute names information.
+!!! note
+	Contact CAS server administrator for attribute names information.
 
 *![](media/7f89597173892c2fccf1676b7d6db8de.png)*
 
@@ -1064,7 +1070,8 @@ secret.key=mySecretPhrase
 
 The private key must be specified without spaces.
 
-**Note:** The private key must be configured prior to creating any secured connections. Otherwise, all stored passwords become invalid.
+!!! note
+	The private key must be configured prior to creating any secured connections. Otherwise, all stored passwords become invalid.
 
 ## Deploy OpenL Tablets Rule Services under Apache Tomcat
 
@@ -1117,7 +1124,8 @@ To deploy OpenL Tablets Rule Services, configure a local file system as a data s
 	production-repository.uri = d:/datasource/
 	```
 
-	**Note:** For proper parsing of Java properties file, the path to the folder must be defined with a slash (‘/’) as the folders delimiter. Back slash “\\” is not allowed.
+	!!! note
+	For proper parsing of Java properties file, the path to the folder must be defined with a slash (‘/’) as the folders delimiter. Back slash “\\” is not allowed.
 
 1.  Save the rule project in the appropriate `datasource` folder.
 
@@ -1219,7 +1227,8 @@ To configure OpenL Tablets Rule Services via JNDI connection, proceed as follows
 
 1.  Change the URL value for `production-repository.uri` according to the appropriate database as described in the **URL value according to the database type** table in [Setting Up OpenL Tablets WebStudio with Installation Wizard](#setting-up-openl-tablets-webstudio-with-installation-wizard).
 
-    **Note:**` `Login and password are not required for definition inside the `application.properties` file while configuring JNDI settings.
+    !!! note
+	` `Login and password are not required for definition inside the `application.properties` file while configuring JNDI settings.
 
 ### Configuring OpenL Tablets Rule Services via AWS S3 Connection
 
