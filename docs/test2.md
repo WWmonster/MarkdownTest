@@ -5,7 +5,8 @@ Release 5.26
 ```
 
 ```
-OpenL Tablets Documentation is licensed under a <br/>Creative Commons Attribution 3.0 United States License.
+OpenL Tablets Documentation is licensed under a  
+Creative Commons Attribution 3.0 United States License.
 ```
 
 ## Preface
