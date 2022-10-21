@@ -12,10 +12,11 @@ nav:
         - Previous Releases: releasenotes/all_rn.md
         - Migration Notes: releasenotes/migration_notes.md
     - Documentation:
-        - Available docs: documentation.md
+        - Available docs: documentation/documentation.md
+        - Getting started: documentation/getting_started.md
         - Guides:
-            - Latest Guides: guides/latest_guides.md
-            - Previous Guides: guides/previous_guides.md
+            - Latest Guides: documentation/guides/latest_guides.md
+            - Previous Guides: documentation/guides/previous_guides.md
     - Test: 'test/test01.md'
 theme: readthedocs
 
