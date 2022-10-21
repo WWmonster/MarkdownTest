@@ -7,7 +7,9 @@ nav:
     - Features: features.md
     - Supported Platforms: platforms.md
     - Downloads: downloads.md
-    - Release Notes: releasenotes.md
+    - Release Notes: 
+        - latestrns.md
+        - allreleasenotes.md
     - Documentation:
         - Available docs: documentation.md
         - Installation Guide: installationguide.md
