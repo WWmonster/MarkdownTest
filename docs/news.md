@@ -1,5 +1,3 @@
-![](OpenL60.png "")
-
 # News #
 
 [OpenL Tablets 5.26.2 Released](https://openl-tablets.org/news/162/16/OpenL-Tablets-5.26.2-Released "OpenL Tablets 5.26.2 Released") - Oct 6, 2022
