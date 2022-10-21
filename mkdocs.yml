@@ -15,7 +15,7 @@ nav:
         - Available docs: documentation.md
         - Guides:
             - Installation Guide: guides/installation_guide.md
-            - Previous Guides: guides/previous_guides
+            - Previous Guides: guides/previous_guides.md
     - Test: 'test/test01.md'
 theme: readthedocs
 
