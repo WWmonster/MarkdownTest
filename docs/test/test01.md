@@ -1,4 +1,4 @@
-[TOC]
+![](../OpenL60.png "")
 
 <DIV markdown="1" style="background:LightCyan;">
 	
