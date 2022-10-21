@@ -8,8 +8,8 @@ nav:
     - Supported Platforms: platforms.md
     - Downloads: downloads.md
     - Release Notes: 
-        - releasenotes/latestrns.md
-        - releasenotes/allreleasenotes.md
+        - releasenotes/latest_rn.md
+        - releasenotes/all_rn.md
     - Documentation:
         - Available docs: documentation.md
         - Installation Guide: installationguide.md
