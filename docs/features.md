@@ -76,27 +76,27 @@ Rules versioning will work even for multi-module and multisource deployments.
 
 !!! important ""
 
-        ## Powerful Environment
+    ## Powerful Environment
 
-        ### Web Interface
+    ### Web Interface
 
-        Give anyone access to the rules platform, from any web browser.
+    Give anyone access to the rules platform, from any web browser.
 
-        ### Search
+    ### Search
 
-        Use search to find anything in your rules and residing documentation. Full text search and indexes are available for all Excel and Word documents. Look for rules by their metadata.
+    Use search to find anything in your rules and residing documentation. Full text search and indexes are available for all Excel and Word documents. Look for rules by their metadata.
 
-        ### Rules Repository
+    ### Rules Repository
 
-        Store rules in a centralized repository. Collaborate using the repository to prevent rules conflicts. The rules repository supports versions, metadata and WebDAV access.
+    Store rules in a centralized repository. Collaborate using the repository to prevent rules conflicts. The rules repository supports versions, metadata and WebDAV access.
 
-        ### Any File in Rules Repository
+    ### Any File in Rules Repository
 
-        Store any file along with your rules in rules repository.
+    Store any file along with your rules in rules repository.
 
-        ### Role-Based Access Control
+    ### Role-Based Access Control
 
-        Control access and allow operations to any rules assets through fine-grained security policies.
+    Control access and allow operations to any rules assets through fine-grained security policies.
 
 ------
 
@@ -130,19 +130,19 @@ Manage rules projects and deployments from third-party tools using the rules rep
 
 !!! important ""
         
-        ## Development Support
+    ## Development Support
 
-        ### Maven Integration
+    ### Maven Integration
 
-        Use rules in any maven-based project. Create new project with rules using archetype.
+    Use rules in any maven-based project. Create new project with rules using archetype.
 
-        ### Full Java Integration
+    ### Full Java Integration
 
-        Any Java classes, their methods and attributes can be easily accessed and called from rules. Java and rules seamlessly interoperate. Call rules from code as usual Java methods.
+    Any Java classes, their methods and attributes can be easily accessed and called from rules. Java and rules seamlessly interoperate. Call rules from code as usual Java methods.
 
-        ### Extensibility
+    ### Extensibility
 
-        There is many ways to customize and extend OpenL Tablets.
+    There is many ways to customize and extend OpenL Tablets.
 
 ------
 
@@ -160,14 +160,14 @@ Use rules as usual Java methods from your code.
 
 !!! important ""        
 
-        ## Editing
-        ### Wizards
+    ## Editing
+    ### Wizards
 
-        Create tables with assistance of guided wizards.
+    Create tables with assistance of guided wizards.
 
-        ### Powerful Editor
+    ### Powerful Editor
 
-        Use powerful table editor with inline cell editors matching cell type and Excel like formatting.
+    Use powerful table editor with inline cell editors matching cell type and Excel like formatting.
 
 ------
 
@@ -185,19 +185,19 @@ Switch on gaps and overlaps checks for conditions of decision and lookup tables.
 
 !!! important ""
         
-        ## Model
+    ## Model
 
-        ### Domain Model
+    ### Domain Model
 
-        Create description of domain with intuitive wizard. Reuse it in services and application.
+    Create description of domain with intuitive wizard. Reuse it in services and application.
 
-        ### Extensible Type System
+    ### Extensible Type System
 
-        Create data types directly in rules. Inherit them from other data types or even Java classes. Define vocabulary types.
+    Create data types directly in rules. Inherit them from other data types or even Java classes. Define vocabulary types.
 
-        ### Data
+    ### Data
 
-        Store data in rules files and access it from application. Maintain it in database like structure.
+    Store data in rules files and access it from application. Maintain it in database like structure.
 
 ------
 
