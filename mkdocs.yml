@@ -13,7 +13,9 @@ nav:
         - Migration Notes: releasenotes/migration_notes.md
     - Documentation:
         - Available docs: documentation.md
-        - Installation Guide: installationguide.md
+        - Guides:
+            - Installation Guide: guides/installation_guide.md
+            - Previous Guides: guides/previous_guides
     - Test: 'test/test01.md'
 theme: readthedocs
 
