@@ -1,7 +1,7 @@
 # Latest User Guides
 
 
-[Installation Guide] (installation_guide.md)
+[Installation Guide](../installation_guide.md)
 
 Demo Package Guide
 
