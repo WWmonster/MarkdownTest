@@ -10,6 +10,7 @@ nav:
     - Release Notes: 
         - Latest Release: releasenotes/latest_rn.md
         - Previous Releases: releasenotes/all_rn.md
+        - Migration Notes: releasenotes/migration_notes.md
     - Documentation:
         - Available docs: documentation.md
         - Installation Guide: installationguide.md
