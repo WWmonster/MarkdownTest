@@ -19,7 +19,7 @@ The OpenL Tablets Installation Guide provides instructions for installing and cu
 
 All installation and configuration can be done in the `application.properties` file. For an example of this file with all properties described, see <http://localhost:8080/webstudio/web/config/application.properties> or access it at the index page of the installed OpenL Tablets WebStudio.
 
-![](img/media_InstallationGuide/1ff42f8d9b8012a5f4307404f564d115.png)
+![](installation_guide_images/1ff42f8d9b8012a5f4307404f564d115.png)
 
 *Figure: Accessing the application.properties file example*
 
@@ -151,7 +151,7 @@ This option is not available if OpenL Tablets WebStudio is installed using the i
 
 To start OpenL Tablets WebStudio in the cluster mode, the `openl.home.shared` or `OPENL_HOME_SHARED` property must be defined properly. In the cluster mode, the same file storage can be used for multiple OpenL Tablets WebStudio instances.
 
-<img src="../img/media_InstallationGuide/a9b21678a299178dbf55c69e15dc64db.jpeg" width="500">
+<img src="../installation_guide_images/a9b21678a299178dbf55c69e15dc64db.jpeg" width="500">
 
 *Figure: Multiple OpenL Tablets WebStudio instances sharing the same drive*
 
@@ -301,7 +301,7 @@ Proceed as follows:
 1.  Click **Install** to start the installation.
 2.  Click **Finish** to complete.
 
-	As a result, Apache Tomcat is installed and started on the user’s computer. In the **Notification Area** located next to the clock, the ![](img/media_InstallationGuide/3cb496a7a506c9a316dd860933a62610.png) icon appears. Tomcat is managed by using this icon or from the **Start** menu.
+	As a result, Apache Tomcat is installed and started on the user’s computer. In the **Notification Area** located next to the clock, the ![](installation_guide_images/3cb496a7a506c9a316dd860933a62610.png) icon appears. Tomcat is managed by using this icon or from the **Start** menu.
 
 1.  To configure JVM options for Tomcat, in the **Notification** area, right click the **Apache Tomcat** icon and select **Configure;** or click **Start \> All Programs \> Apache Tomcat 7.0 \> Configure Tomcat**.
 
@@ -322,7 +322,7 @@ Proceed as follows:
 1.  Click **Apply** and then click **OK**.
 2.  To restart Tomcat, in **Notification Area**, right click the Tomcat icon and select **Stop service**.
 
-	The Tomcat icon changes to ![](img/media_InstallationGuide/92d4ddf0cb30a775c8a9386e39167b21.png).
+	The Tomcat icon changes to ![](installation_guide_images/92d4ddf0cb30a775c8a9386e39167b21.png).
 
 1.  Select **Start Service**.
 
@@ -414,7 +414,7 @@ Proceed as follows:
 
 	The following information is displayed:
 
-	![](img/media_InstallationGuide/315b31b0d9c0137373b2d81b29551174.png)
+	![](installation_guide_images/315b31b0d9c0137373b2d81b29551174.png)
 
 	*Figure: OpenL Tablets package is added*
 
@@ -580,7 +580,7 @@ Before configuration, perform the following steps:
 1.  Start OpenL Tablets WebStudio and in the third step, select a **Multi-user**, **Active Directory,** or **SSO** mode.
 2.  Define database URL, username, and password.
 
-	![](img/media_InstallationGuide/6b1f61c6269e4c3be6d13a97f4228f2a.png)
+	![](installation_guide_images/6b1f61c6269e4c3be6d13a97f4228f2a.png)
 
 	*Figure: Creating a connection to the Oracle database in the installation wizard*
 
@@ -589,7 +589,7 @@ Before configuration, perform the following steps:
 
 	Note that even after configuring the database as user storage, a default user is available for login. The default user can manage user settings in OpenL Tablets WebStudio, for example, create a user or add privileges to a user. All user management activities can be performed via the OpenL Tablets WebStudio UI, in the **Admin** **\> User Management** section.
 
-	![](img/media_InstallationGuide/74d10c2b2686c171b48f6656b88d1629.png)
+	![](installation_guide_images/74d10c2b2686c171b48f6656b88d1629.png)
 
 	*Figure: Managing users in the User Management section of OpenL Tablets WebStudio*
 
@@ -660,7 +660,7 @@ This section explains how to set up an MariaDB database. Proceed as follows:
 2.  Define password for a **root** user.
 3.  Create a database.
 
-	![](img/media_InstallationGuide/374a4090e431b3fb9109f4cd4f92f3b2.png)
+	![](installation_guide_images/374a4090e431b3fb9109f4cd4f92f3b2.png)
 
 	*Figure: Setting properties for the MariaDB database*
 
@@ -669,7 +669,7 @@ This section explains how to set up an MariaDB database. Proceed as follows:
 3.  Click **New** to create a session.
 4.  Select the **Prompt for credentials** check box and define a database port.
 
-	    ![](img/media_InstallationGuide/d0b7936d6f8edbf001ae8fd8060ab59c.png)
+	    ![](installation_guide_images/d0b7936d6f8edbf001ae8fd8060ab59c.png)
 
 	*Figure: Creating a connection to the MariaDB database*
 
@@ -692,7 +692,7 @@ This section explains how to set up an Oracle database. Proceed as follows:
 
 1.  Start Oracle Workbench and create a connection or select an existing database connection.
 
-	![](img/media_InstallationGuide/bcef7557ea9819f858e80d2338e3f516.png)
+	![](installation_guide_images/bcef7557ea9819f858e80d2338e3f516.png)
 
 	*Figure: Creating a connection to the Oracle database*
 
@@ -780,7 +780,7 @@ Configure design and deployment repositories settings on the second step of Open
 1.  Select **JDBC** as the type of the connection database (JDBC).
 2.  Provide **URL** and authentication data.
 
-![](img/media_InstallationGuide/0c03bf32b2a043f41ab7ef85658f0c4a.png)
+![](installation_guide_images/0c03bf32b2a043f41ab7ef85658f0c4a.png)
 
 *Figure: Setting up a JDBC connection using the installation wizard*
 
@@ -847,7 +847,7 @@ Configure design and deployment repositories settings on the second step of Open
 
 	Definition of the authentication data, that is, login and password, is not required in the installation wizard because this information is set in `context.xml` file already.
 
-	![](img/media_InstallationGuide/ca12844a99b8378804060adafd3e18c5.png)
+	![](installation_guide_images/ca12844a99b8378804060adafd3e18c5.png)
 
 	*Figure: Setting up JNDI connection with installation wizard*
 
@@ -871,7 +871,7 @@ Configure design and deployment repositories settings on the second step of Open
 
 The following diagram illustrates how to connect to OpenL Tablets WebStudio via proxy.
 
-![](img/media_InstallationGuide/3e3121758c148ab1c34f085210b39ee2.jpeg)
+![](installation_guide_images/3e3121758c148ab1c34f085210b39ee2.jpeg)
 
 *Figure: Connecting to OpenL Tablets WebStudio via proxy*
 
@@ -894,7 +894,7 @@ OpenL Tablets WebStudio allows selecting where user permissions are managed in t
 1.  Provide at least one user to be granted administration privileges in the **Administrators** field.
 2.  Select the **All authenticated users have View access** check box to grant viewer privileges by default.
 
-    ![](img/media_InstallationGuide/d00e1e24ed69010d2edabcfa8b742a4b.png)
+    ![](installation_guide_images/d00e1e24ed69010d2edabcfa8b742a4b.png)
 
 	*Figure: Configuring initial users*
 
@@ -905,7 +905,7 @@ This section explains how to set up authentication via Active Directory. Proceed
 1.  Specify Active Directory domain, URL, user filter, and group filter.
 2.  To verify connection to Active Directory, enter credentials of the existing Active Directory user and click **Check Connection**.
 
-	*![](img/media_InstallationGuide/b0af66e4a4c7fd05a595fbaed7d3da7c.png)*
+	*![](installation_guide_images/b0af66e4a4c7fd05a595fbaed7d3da7c.png)*
 
 	*Figure: Configuring authentication via Active Directory*
 
@@ -928,7 +928,7 @@ Define the following parameters:
 !!! note
 	Contact CAS server administrator for attribute names information.
 
-*![](img/media_InstallationGuide/7f89597173892c2fccf1676b7d6db8de.png)*
+*![](installation_guide_images/7f89597173892c2fccf1676b7d6db8de.png)*
 
 *Figure: Configuring CAS*
 
@@ -957,7 +957,7 @@ Define the following parameters:
 | **Attribute for Email**                 | SAML attribute for the email. <br/>Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                      |
 | **Attribute for Groups**                | SAML attribute for groups. <br/>Keep it blank if the SAML server does not return this attribute.                                                                                                                                                                                                                                                                                                                                                         |
 
-![](img/media_InstallationGuide/e1bc1d72cfd7f7e2cf44ad34b7279a77.png)
+![](installation_guide_images/e1bc1d72cfd7f7e2cf44ad34b7279a77.png)
 
 *Figure: Configuring SAML*
 
@@ -1002,7 +1002,7 @@ This section explains how to set up authentication via the OAuth2 server using t
 | **Attribute for Email**         | OAuth2 attribute for the email. <br/>Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                                |
 | **Attribute for Groups**        | SA OAuth2 ML attribute for groups. <br/>Keep it blank if the OAuth2 server does not return this attribute.                                                                                                                             |
 
-![](img/media_InstallationGuide/9cdb3316b12b230a6ad1f8cc0c38fc06.jpeg)
+![](installation_guide_images/9cdb3316b12b230a6ad1f8cc0c38fc06.jpeg)
 
 *Figure: Configuring single sign on via OAuth2*
 
@@ -1345,7 +1345,7 @@ To set up a JNDI connection settings for OpenL Tablets WebStudio, proceed as fol
 1.  Select **Subsystems \> Datasources \> Non-XA**.
 1.  Click **Add.**
 
-	![](img/media_InstallationGuide/b126142f46ae04166e7bb40b25a718a3.png)
+	![](installation_guide_images/b126142f46ae04166e7bb40b25a718a3.png)
 
 	*Figure: Configuring a JNDI connection*
 
@@ -1353,7 +1353,7 @@ To set up a JNDI connection settings for OpenL Tablets WebStudio, proceed as fol
 1.  Enter the data source name and JNDI name and click **Next.**
 1.  Switch to the **Detected Driver** tab.
 
-	![](img/media_InstallationGuide/8e8e680140b9e8160fba58d2222e2047.png)
+	![](installation_guide_images/8e8e680140b9e8160fba58d2222e2047.png)
 
 	*Figure: JDBC driver collection*
 
@@ -1386,7 +1386,7 @@ After integration any changes can be made in user’s rule in OpenL Tablets WebS
 
 	The following diagram illustrates the OpenL Tablets WebStudio and OpenL Tablets Rule Services integration:
 
-	![](img/media_InstallationGuide/7d47ea73c919e3bfe300c8906cd7f750.png)
+	![](installation_guide_images/7d47ea73c919e3bfe300c8906cd7f750.png)
 
 	*Figure: OpenL Tablets WebStudio and OpenL Tablets Rule Services deployment*
 
