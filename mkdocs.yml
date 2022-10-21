@@ -12,7 +12,7 @@ nav:
         - Previous Releases: releasenotes/all_rn.md
         - Migration Notes: releasenotes/migration_notes.md
     - Documentation:
-        - Available docs: documentation/documentation.md
+        - Available documentation: documentation/available_doc.md
         - Getting started: documentation/getting_started.md
         - Guides:
             - Latest Guides: documentation/guides/latest_guides.md
