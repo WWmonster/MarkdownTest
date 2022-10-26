@@ -1,5 +1,5 @@
 site_name: OpenL Tablets
-site_url: https://example.com/
+site_url: https://openl.readthedocs.io/en/latest/
 nav:
   - Latest Guides: documentation/guides/latest_guides.md
   - Previous Guides: documentation/guides/previous_guides.md
