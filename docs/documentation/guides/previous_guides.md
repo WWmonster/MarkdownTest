@@ -1,9 +1,9 @@
 ![](OpenLHome.png)
 
-# Previous Guides
+# Previous Guides (zip files)
 
-link
+[5.25](previous guides/5.25.zip)
 
-link
+[5.24](previous guides/5.24.zip)
 
-link
+...
