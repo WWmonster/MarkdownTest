@@ -3,7 +3,7 @@ site_url: https://example.com/
 nav:
   - Latest Guides: documentation/guides/latest_guides.md
   - Previous Guides: documentation/guides/previous_guides.md
-- Test: 'test/test01.md'
+   - Test: 'test/test01.md'
 theme: readthedocs
 
 markdown_extensions:
