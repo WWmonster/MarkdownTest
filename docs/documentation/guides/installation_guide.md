@@ -13,7 +13,7 @@ Creative Commons Attribution 3.0 United States License.
 
 **OpenL Tablets** is a Business Rules Management System (BRMS) based on tables presented in Microsoft Excel documents. Using unique concepts, OpenL Tablets facilitates treating business documents containing business logic specifications as an executable source code.
 
-OpenL Tablets provides a set of tools addressing BRMS related capabilities including *OpenL Tablets WebStudio* that can be used for creating, testing, and managing business rules and business rule projects, and *OpenL Tablets Rule Services* designed for integration of business rules into customer applications.
+OpenL Tablets provides a set of tools addressing the BRMS related capabilities including *OpenL Tablets WebStudio* that can be used for creating, testing, and managing business rules and business rule projects, and *OpenL Tablets Rule Services* designed for integration of business rules into customer applications.
 
 The OpenL Tablets Installation Guide provides instructions for installing and customizing OpenL Tablets software. The document describes how to install OpenL Tablets under Apache Tomcat, deploy, and set up OpenL Tablets Rule Services.
 
