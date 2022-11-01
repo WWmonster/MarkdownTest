@@ -48,7 +48,7 @@ Basic knowledge of Java and Apache Tomcat is required to use this guide effectiv
 
 ### Related Information
 
-The following table lists sources of information related to contents of this guide:
+The following table lists the sources of information related to contents of this guide:
 
 | Title                                                                                                                                                       | Description                                                                                                   |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------|
