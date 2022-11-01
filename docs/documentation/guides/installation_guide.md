@@ -1,7 +1,7 @@
 # OpenL Tablets BRMS Installation Guide
 
 ```
-Release 5.26
+Release 5.27
 ```
 
 ```
