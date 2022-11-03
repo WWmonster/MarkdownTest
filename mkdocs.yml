@@ -6,6 +6,8 @@ nav:
   - Test: 'test/test01.md'
 theme: readthedocs
 
+navigation_depth: 4
+
 repo_url: https://github.com/EISTW/OpenL/
 
 markdown_extensions:
