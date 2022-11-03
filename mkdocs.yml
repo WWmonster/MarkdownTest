@@ -4,9 +4,17 @@ nav:
   - Latest User Guides: 
     - Installation Guide: documentation/guides/installation_guide.md
     - Demo Package Guide: documentation/guides/demo_package_guide.md
-    - for Business Users: 
+    - For Business Users: 
       - Reference Guide: documentation/guides/reference_guide.md
       - WebStudio User Guide: documentation/guides/webstudio_user_guide.md
+    - For Developers:
+      - Rule Services Usage and Customization Guide: documentation/guides/rule_services_and_customization_guide.md
+      - Developer Guide: documentation/guides/developer_guide.md
+      - Activiti Integration Guide: documentation/guides/activiti_integration_guide.md
+      - Maven Plugin Guide: documentation/guides/maven_plugin_guide.md
+  - Previous User Guides: 
+    - 5.25: documentation/previousversions/5.25.md
+    - 5.24: documentation/previousversions/5.24.md
   - Test: 'test/test01.md'
    
 theme: readthedocs
