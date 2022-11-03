@@ -5,7 +5,7 @@ nav:
     - Installation Guide: documentation/guides/installation_guide.md
     - Demo Package Guide: documentation/guides/demo_package_guide.md
     - for Business Users: 
-      - Reference Guide: documentation/guides/rference_guide.md
+      - Reference Guide: documentation/guides/reference_guide.md
       - WebStudio User Guide: documentation/guides/webstudio_user_guide.md
   - Test: 'test/test01.md'
    
