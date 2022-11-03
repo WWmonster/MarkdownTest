@@ -1,4 +1,4 @@
-# OpenL Tablets BRMS Installation Guide
+# Maven Plugin Guide
 
 ```
 Release 5.27
@@ -8,7 +8,7 @@ Release 5.27
 OpenL Tablets Documentation is licensed under the Creative Commons Attribution 3.0 United States License.
 ```
 
-## Preface
+## Maven test
 
 **OpenL Tablets** is a Business Rules Management System (BRMS) based on tables presented in the Microsoft Excel documents. Using unique concepts, OpenL Tablets facilitates treating business documents containing business logic specifications as an executable source code.
 
