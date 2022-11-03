@@ -1397,7 +1397,7 @@ This section describes an alternative way of how to set up an integrated environ
 2.  Connect OpenL Tablets WebStudio to the database to store deployed projects as described in [Setting Up OpenL Tablets WebStudio with Installation Wizard](#setting-up-openl-tablets-webstudio-with-installation-wizard).
 3.  Configure OpenL Tablets Rule Services for a database data source as described in [Configuring OpenL Tablets Rule Services for a Database Data Source](#_Configure_Web_Services_2).
 
-## Troubleshooting Notes
+## Troubleshooting
 
 If OpenL Tablets WebStudio is deployed under Tomcat in the Unix/Linux environment, consider the following troubleshooting recommendations:
 
