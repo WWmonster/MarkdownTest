@@ -3,7 +3,7 @@
 # Latest User Guides
 
 
-[Installation Guide](installation_guide.md#Frequently Asked Questions)
+[Installation Guide](installation_guide.md#Troubleshooting)
 
 Demo Package Guide
 
