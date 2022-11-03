@@ -11,6 +11,8 @@ repo_url: https://github.com/EISTW/OpenL/
 
 markdown_extensions:
   - markdown.extensions.admonition
+  - toc:
+      permalink: True
   
 extra_css:
     - css/extra.css
