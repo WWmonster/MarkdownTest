@@ -14,9 +14,8 @@ nav:
       - Activiti Integration Guide: documentation/guides/activiti_integration_guide.md
       - Maven Plugin Guide: documentation/guides/maven_plugin_guide.md
   - PREVIOUS USER GUIDES: 
-    - 5.25: documentation/previousversions/5.25/5.25.md
-    - 5.24: documentation/previousversions/5.24/5.24.md
-    - 5.23: documentation/previousversions/5.23/5.23.md
+    - 5.25: documentation/previousversions/5.25/_guides.md
+    - 5.24: documentation/previousversions/5.24/_guides.md
   - Test: 'test/test01.md'
    
 theme: readthedocs
