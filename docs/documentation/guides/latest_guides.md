@@ -3,7 +3,7 @@
 # Latest User Guides
 
 
-[Installation Guide](installation_guide.md)
+[Installation Guide](installation_guide.md#Frequently Asked Questions)
 
 Demo Package Guide
 
@@ -22,6 +22,3 @@ Developer Guide
 Activiti Integration Guide
 
 Maven Plugin Guide
-
-###test
-nothing
