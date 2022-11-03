@@ -4,7 +4,7 @@ nav:
   - Latest Guides: documentation/guides/latest_guides.md
   - Previous Guides: documentation/guides/previous_guides.md
   - Test: 'test/test01.md'
-  - Test2: 'docs/documentation/guides/installation_guide.md'
+  - Test2: 'documentation/guides/installation_guide.md'
   
 theme: readthedocs
 
