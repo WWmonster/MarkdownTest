@@ -3,7 +3,7 @@
 # PREVIOUS USER GUIDES
 (See folder name for version)
 
-[Installation Guide](installation_guide.md)
+[Installation Guide](../5.25/installation_guide.md)
 
 [Demo Package Guide](demo_package_guide.md)
 
