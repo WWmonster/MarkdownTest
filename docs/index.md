@@ -1,4 +1,4 @@
-![](OpenLHome.png)
+![](img/OpenLHome.png)
 
 # Latest User Guides
 
