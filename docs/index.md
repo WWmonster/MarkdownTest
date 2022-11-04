@@ -3,22 +3,22 @@
 # Latest User Guides
 
 
-[Installation Guide](installation_guide.md)
+[Installation Guide](docs/documentation/guides/installation_guide.md)
 
-[Demo Package Guide](demo_package_guide.md)
+[Demo Package Guide](docs/documentation/guides/demo_package_guide.md)
 
 ## for Business Users:
 
-[Reference Guide](reference_guide.md)
+[Reference Guide](docs/documentation/guides/reference_guide.md)
 
-[WebStudio User Guide](webstudio_user_guide.md)
+[WebStudio User Guide](docs/documentation/guides/webstudio_user_guide.md)
 
 ## for Developers:
 
-[Rule Services Usage and Customization Guide](rule_services_usage_and_customization_guide.md)
+[Rule Services Usage and Customization Guide](docs/documentation/guides/rule_services_usage_and_customization_guide.md)
 
-[Developer Guide](developer_guide.md)
+[Developer Guide](docs/documentation/guides/developer_guide.md)
 
-[Activiti Integration Guide](activiti_integration_guide.md)
+[Activiti Integration Guide](docs/documentation/guides/activiti_integration_guide.md)
 
-[Maven Plugin Guide](maven_plugin_guide.md)
+[Maven Plugin Guide](docs/documentation/guides/maven_plugin_guide.md)
